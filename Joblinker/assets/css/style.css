@@ -11,8 +11,3 @@ h5,
 h6 {
     font-family: var(--bs-font-serif);
 }
-
-.py-120{
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
