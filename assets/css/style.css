@@ -11,3 +11,6 @@ h5,
 h6 {
     font-family: var(--bs-font-serif);
 }
+.navbar-collapse{
+    flex-grow: 0;
+}
