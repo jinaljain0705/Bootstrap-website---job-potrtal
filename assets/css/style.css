@@ -1,6 +1,8 @@
 :root {
     --bs-font-sans-serif: 'Manrope';
     --bs-font-serif: 'Fraunces';
+    --primary-color:#3D8D7A;
+    --secondary-color:#B3D8A8;
 }
 
 h1,
@@ -11,6 +13,12 @@ h5,
 h6 {
     font-family: var(--bs-font-serif);
 }
+.navbar{
+    background-color: var(--secondary-color) !important;
+}
 .navbar-collapse{
     flex-grow: 0;
+}
+.carousel-item{
+    height: 800px;
 }
