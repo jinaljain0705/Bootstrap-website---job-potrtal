@@ -19,6 +19,6 @@ h6 {
 .navbar-collapse{
     flex-grow: 0;
 }
-.carousel-item{
-    height: 800px;
+.dropdown-menu{
+    border:0;
 }
