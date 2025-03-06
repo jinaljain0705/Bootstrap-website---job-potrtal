@@ -32,6 +32,9 @@ h6 {
 .dropdown-menu{
     border:0;
 }
+.slider , .find-job{
+    background-color: #e6e6fa;
+}
 .banner-1 .carousel-caption{
     top: 30%;
 }
