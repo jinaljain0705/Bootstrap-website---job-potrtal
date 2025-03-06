@@ -13,12 +13,54 @@ h5,
 h6 {
     font-family: var(--bs-font-serif);
 }
-.navbar{
-    background-color: var(--secondary-color) !important;
+.fs-14{
+    font-size: 14px;
 }
+.fs-13{
+    font-size: 13px;
+}
+.py-120{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+/* .navbar{
+    background-color: var(--secondary-color) !important;
+} */
 .navbar-collapse{
     flex-grow: 0;
 }
 .dropdown-menu{
     border:0;
 }
+.carousel-item{
+
+}
+.banner-1 .carousel-caption{
+    top: 30%;
+}
+.carousel-item{
+    height: 800px;
+}
+.banner-2 .carousel-caption{
+    top: 20%;
+}
+
+.join-btn{
+    background: var(--primary-color);
+}
+.job{
+    background-color: #E6E6FA;
+}
+.job-card{
+    padding-top: 35px !important;
+    margin-bottom: 30px;
+}
+/* Search Job */
+.search-1{
+    left: -20%;
+}
+.search-2{
+    right: -20%;
+    bottom: -35%;
+}
+
