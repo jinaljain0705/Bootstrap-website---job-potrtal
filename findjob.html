@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light z-1 w-100">
@@ -100,9 +102,25 @@
     <main>
         <section class="slider">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="banner-heading text-center">
+                    <h2 class="fw-bold">
+                        <span class="text-primary">22 Jobs</span>
+                        Available Now
+                    </h2>
+                    <p class="fw-medium text-secondary fs-14">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero repellendus magni,
+                        <br>
+                        quidem, voluptates, quas voluptatem quae quos quia.
+                    </p>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-2 px-0">
+                        <div class="banner-img d-flex justify-content-between pe-2">
+                            <img src="./assets/images/banner-img-1.svg" alt="">
+                        </div>
+                    </div>
                     <div class="col-8">
-                        <div class="form-find bg-light text-start mt-40 p-4 rounded-3 shadow">
+                        <div class="form-find bg-light text-start mt-40 p-4 rounded-3 shadow Position-absolute ">
                             <form class="w-100">
                                 <div class="row">
                                     <div class="col">
@@ -146,8 +164,13 @@
                                             <span>Search</span>
                                         </button>
                                     </div>
-                                </div>                    
+                                </div>
                             </form>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="banner-img d-flex justify-content-between ps-2">
+                            <img src="./assets/images/banner-img-2.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -162,192 +185,194 @@
                             <h3 class="mb-0">Filter Jobs</h3>
                         </div>
                         <form class="ps-3">
-                                <label for="disabledSelect" class="form-label h4 pb-2">Industry</label>
-                                <select id="disabledSelect" class="form-select mb-3">
-                                    <option>Web Development</option>
-                                    <option>Software Development</option>
-                                    <option>Software Engineer</option>
-                                    <option>Full-Stack Developer</option>
-                                    <option>Accountant</option>
-                                    <option>HR Manager</option>
-                                    <option>Graphic Designer</option>
-                                    <option>UI/UX Designer</option>
-                                    <option>Frontend Developer</option>
-                                    <option>Civil Engineer</option>
-                                    <option>IT Manager</option>
-                                    <option>Data Scientist</option>
-                                    <option>Marketing Assistant</option>
-                                </select>
-                                <label class="form-check-label h4 mb-2" for="flexCheckChecked">Job Type</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        full time
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        part time
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        work from home
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        internship
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        freelance
-                                    </label>
-                                </div>
-                                <label for="disabledSelect" class="form-label h4 my-3">Job Location</label>
-                                <select id="disabledSelect" class="form-select mb-3">
-                                    <option>Mumbai</option>
-                                    <option>Surat</option>
-                                    <option>Ahmedabad</option>
-                                    <option>Hyderabad</option>
-                                    <option>Bangalore</option>
-                                    <option>Jaipur</option>
-                                    <option>Chennai</option>
-                                </select>
-                                <label for="disabledSelect" class="form-label h4 my-3">Experience Level</label>
-                                <select id="disabledSelect" class="form-select mb-3">
-                                    <option>Entry level</option>
-                                    <option>Mid-level</option>
-                                    <option>Associate</option>
-                                    <option>Director</option>
-                                    <option>Executive</option>
-                                </select>
-                                <label class="form-check-label h4 my-3" for="flexCheckChecked">Popular Keyword</label>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Software
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Developer
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Web
-                                    </label>
-                                </div>
-                                <label class="form-check-label h4" for="flexCheckChecked">Position</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Senior
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Junior
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Freshers
-                                    </label>
-                                </div>
-                                <label class="form-check-label h4 my-3" for="flexCheckChecked">Posted Within</label>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        any time
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        today
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        3 days
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        7 days
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        15 days
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        30 days
-                                    </label>
-                                </div>
-                                <label class="form-check-label h4" for="flexCheckChecked">Salary Range</label>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">     
-                                    <label class="form-check-label" for="flexCheckChecked">0-5000</label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">5000-10000</label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">10000-20000</label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">20000-30000</label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">30000-40000</label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">40000-50000</label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">50000-60000</label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">60000-70000</label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">70000-80000</label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">80000-90000</label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">90000-100000</label>
+
+                            <label for="disabledSelect" class="form-label h4 pb-2">Industry</label>
+                            <select id="disabledSelect" class="form-select mb-3">
+                                <option>Web Development</option>
+                                <option>Software Development</option>
+                                <option>Software Engineer</option>
+                                <option>Full-Stack Developer</option>
+                                <option>Accountant</option>
+                                <option>HR Manager</option>
+                                <option>Graphic Designer</option>
+                                <option>UI/UX Designer</option>
+                                <option>Frontend Developer</option>
+                                <option>Civil Engineer</option>
+                                <option>IT Manager</option>
+                                <option>Data Scientist</option>
+                                <option>Marketing Assistant</option>
+                            </select>
+                            <label class="form-check-label h4 mb-2" for="flexCheckChecked">Job Type</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    full time
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    part time
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    work from home
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    internship
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    freelance
+                                </label>
+                            </div>
+                            <label for="disabledSelect" class="form-label h4 my-3">Job Location</label>
+                            <select id="disabledSelect" class="form-select mb-3">
+                                <option>Mumbai</option>
+                                <option>Surat</option>
+                                <option>Ahmedabad</option>
+                                <option>Hyderabad</option>
+                                <option>Bangalore</option>
+                                <option>Jaipur</option>
+                                <option>Chennai</option>
+                            </select>
+                            <label for="disabledSelect" class="form-label h4 my-3">Experience Level</label>
+                            <select id="disabledSelect" class="form-select mb-3">
+                                <option>Entry level</option>
+                                <option>Mid-level</option>
+                                <option>Associate</option>
+                                <option>Director</option>
+                                <option>Executive</option>
+                            </select>
+                            <label class="form-check-label h4 my-3" for="flexCheckChecked">Popular Keyword</label>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Software
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Developer
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Web
+                                </label>
+                            </div>
+                            <label class="form-check-label h4" for="flexCheckChecked">Position</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Senior
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Junior
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Freshers
+                                </label>
+                            </div>
+                            <label class="form-check-label h4 my-3" for="flexCheckChecked">Posted Within</label>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    any time
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    today
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    3 days
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    7 days
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    15 days
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    30 days
+                                </label>
+                            </div>
+                            <label class="form-check-label h4" for="flexCheckChecked">Salary Range</label>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">0-5000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">5000-10000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">10000-20000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">20000-30000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">30000-40000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">40000-50000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">50000-60000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">60000-70000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">70000-80000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">80000-90000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">90000-100000</label>
                             </div>
                         </form>
                     </div>
                     <div class="contact-page col-9 border-box">
                         <div class="row">
-                            <div class="col-4 d-flex justify-content-center align-items-center">
-                                <span class="text">
+                            <div class="Contact-heading d-flex justify-content-between align-items-center  py-4 mb-3">
+                                <span class="text-secondary fw-semibold">
                                     showing
                                     <span class="fw-bold">41-60</span>
                                     of
                                     <span class="fw-bold">100</span>
                                     jobs
                                 </span>
-                            </div>
-                            <div class="col-5 d-flex justify-content-end align-items-center ">
-                                <div class="border-box mr-10 d-flex justify-content-center align-items-center">
-                                    <span class="text-sort fs-14">
-                                        Show
-                                    </span>
-                                    <div class="dropdown dropdown-sort align-items-center d-flex justify-content-center">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static">
-                                            <span>10</span>
+                                <div class="d-flex">
+                                    <div
+                                        class="dropdown dropdown-sort align-items-center d-flex justify-content-center border border-secondary-subtle me-2 rounded-3">
+
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            data-bs-display="static">
+                                            <span class="text-secondary fs-14 pe-1">
+                                                Show:
+                                            </span>
+                                            <span class="fs-14">10</span>
                                             <i class="fi-rr-angle-small-down"></i>
                                         </button>
-                                        <ul class="dropdown-menu dropdown-menu-end p-2"> 
+                                        <ul class="dropdown-menu dropdown-menu-end p-2">
                                             <li>
                                                 <a class="dropdown-item" href="#">10</a>
                                             </li>
@@ -364,36 +389,43 @@
                                                 <a class="dropdown-item" href="#">50</a>
                                             </li>
                                     </div>
-                                </div>
-                                <div class="border-box mr-10 d-flex justify-content-center align-items-center">
-                                    <span class="text-sort fs-14">
-                                        Sort By
-                                    </span>
-                                    <div class="dropdown dropdown-sort">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static">
-                                            <span>Newest Post</span>
-                                            <i class="fi-rr-angle-small-down"></i>
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-end">
-                                            <li>
-                                                <a class="dropdown-item" href="#">Newest Post</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">Oldest Post</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">Rating Post</a>
-                                            </li>
-                                        </ul>
+                                    <div
+                                        class="border-box mr-10 d-flex justify-content-center align-items-center border border-secondary-subtle me-2 rounded-3">
+
+                                        <div class="dropdown dropdown-sort">
+                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                data-bs-display="static">
+                                                <span class="text-secondary fs-14">
+                                                    Sort By:
+                                                </span>
+                                                <span class="fs-14">Newest Post</span>
+                                                <i class="fi-rr-angle-small-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Newest Post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Oldest Post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Rating Post</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="box-type d-flex justify-content-center align-items-center border-box mr-10 border border-secondary-subtle me-2 rounded-3">
+                                        <i class="bi bi-list px-2 py-1 text-dark fs-6"></i>
+                                    </div>
+                                    <div
+                                        class="box-type d-flex justify-content-center align-items-center border-box mr-10 ">
+                                        <i class="bi bi-grid bg-primary text-white px-2 py-1 rounded-3"></i>
                                     </div>
                                 </div>
-                                <div class="box-type d-flex justify-content-center align-items-center border-box mr-10 p">
-                                    <i class="bi bi-list p-1"></i>
-                                </div>
-                                <div class="box-type d-flex justify-content-center align-items-center border-box mr-10 p-1">
-                                    <i class="bi bi-grid"></i>
-                                </div>
-                    </div>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-4">
                                 <div class="job-card bg-light p-3 rounded-2">
                                     <div class="job-img d-flex ps-2 pb-2">
@@ -434,7 +466,8 @@
                                             <span class="pt-2">/Hour</span>
                                         </div>
                                         <div class="col-five">
-                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply Now</a>
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -478,7 +511,8 @@
                                             <span class="pt-2">/Hour</span>
                                         </div>
                                         <div class="col-five">
-                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply Now</a>
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -523,7 +557,8 @@
                                             <span class="pt-2">/Hour</span>
                                         </div>
                                         <div class="col-five">
-                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply Now</a>
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -565,7 +600,8 @@
                                             <span class="pt-2">/Hour</span>
                                         </div>
                                         <div class="col-five">
-                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply Now</a>
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -608,7 +644,8 @@
                                             <span class="pt-2">/Hour</span>
                                         </div>
                                         <div class="col-five">
-                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply Now</a>
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -652,7 +689,8 @@
                                             <span class="pt-2">/Hour</span>
                                         </div>
                                         <div class="col-five">
-                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply Now</a>
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -694,7 +732,8 @@
                                             <span class="pt-2">/Hour</span>
                                         </div>
                                         <div class="col-five">
-                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply Now</a>
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -739,7 +778,8 @@
                                             <span class="pt-2">/Hour</span>
                                         </div>
                                         <div class="col-five">
-                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply Now</a>
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -784,7 +824,8 @@
                                             <span class="pt-2">/Hour</span>
                                         </div>
                                         <div class="col-five">
-                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply Now</a>
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -794,8 +835,36 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Previous</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
