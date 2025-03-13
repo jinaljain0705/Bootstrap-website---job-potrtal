@@ -1,66 +1,280 @@
 :root {
-    --bs-font-sans-serif: 'Manrope';
-    --bs-font-serif: 'Fraunces';
-    --primary-color:#3D8D7A;
-    --secondary-color:#B3D8A8;
+  --bs-font-sans-serif: "Manrope";
+  --bs-font-serif: "Fraunces";
+  --primary-color: #3d8d7a;
+  --secondary-color: #b3d8a8;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--bs-font-serif);
+}
+body{
+  padding-top: 5%;
+}
+.paragraph-color {
+  color: #66789c;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.py-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.fs-52 {
+  font-size: 52px;
+}
+img{
+  display: block;
+}
+/* Navabar */
+.navbar-collapse {
+  flex-grow: 0;
+}
+.dropdown-menu {
+  border: 0;
+}
+/* Banner */
+.slider,
+.find-job {
+  background-color: #e6e6fa;
+}
+.banner-1{
+  background-image: url("../images/Banner/bg-banner.svg");
+}
+.banner-1 .carousel-caption {
+  top: 30%;
+}
+.carousel-item {
+  height: 800px;
+}
+.banner-2 .carousel-caption {
+  top: 20%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--bs-font-serif);
+.join-btn {
+  background: var(--primary-color);
 }
-.fs-14{
-    font-size: 14px;
+body {
+  background-color: #eff2fb;
 }
-.fs-13{
-    font-size: 13px;
+/* Job Category */
+@media (max-width: 767px) {
+    #recipeCarousel .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    #recipeCarousel .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
 }
-.py-120{
-    padding-top: 120px;
-    padding-bottom: 120px;
+
+#recipeCarousel .carousel-inner .carousel-item.active,
+#recipeCarousel .carousel-inner .carousel-item-next,
+#recipeCarousel .carousel-inner .carousel-item-prev {
+    display: flex;
 }
-/* .navbar{
-    background-color: var(--secondary-color) !important;
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    #recipeCarousel .carousel-inner .carousel-item-end.active,
+    #recipeCarousel .carousel-inner .carousel-item-next {
+        transform: translateX(33.33%);
+    }
+
+    #recipeCarousel .carousel-inner .carousel-item-start.active, 
+    #recipeCarousel .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.33%);
+    }
+}
+
+#recipeCarousel .carousel-inner .carousel-item-end,
+#recipeCarousel .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+/* Profile */
+/* .profile{
+    background-color: #eff2fb;
 } */
-.navbar-collapse{
-    flex-grow: 0;
+/* Job */
+.job-card {
+  padding-top: 30px !important;
+  margin-bottom: 30px;
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
-.dropdown-menu{
-    border:0;
+.job-card:hover,
+.client-card:hover,
+.blog-card:hover, .rec-card:hover , .team-card:hover,
+.mission .card:hover{
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transform: translateY(-3px);
+  border-color: #b4c0e0;
+  background-color: white !important;
 }
-.slider , .find-job{
-    background-color: #e6e6fa;
+.job-card:hover .job-btn {
+  color: white !important;
+  background-color: #0d6efd !important;
 }
-.banner-1 .carousel-caption{
-    top: 30%;
+.job-category a {
+  background: #fff;
+  border: 1px solid #e0e6f7;
+  box-shadow: 0 2px 4px -5px #0a2a69 !important;
+  font-size: 14px;
+  padding: 13px 17px;
 }
-.carousel-item{
-    height: 800px;
+.job-category a:hover{
+    border: 1px solid blue;
 }
-.banner-2 .carousel-caption{
-    top: 20%;
+.job-img h5{
+  font-size: 18px;
 }
+/* Job Category */
 
-.join-btn{
-    background: var(--primary-color);
-}
-.job{
-    background-color: #E6E6FA;
-}
-.job-card{
-    padding-top: 35px !important;
-    margin-bottom: 30px;
-}
+  
+
 /* Search Job */
-.search-1{
-    left: -20%;
+.search-1 {
+  top: -17%;
+  left: -16%;
 }
-.search-2{
-    right: -20%;
-    bottom: -35%;
+.search-2 {
+  right: -11%;
+  bottom: -37%;
+}
+.s-job-bottom .btn:hover, .profile-content .btn:hover{
+  background-color: #05264e !important;
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+.s-job-bottom .learn-more:hover {
+  color: #0d6efd !important;
+}
+.search-img .figure-img{
+  max-width: 80%;
 }
 
+/* Our Clients */
+.ratings-star {
+  font-size: 12px;
+}
+.job-card,
+.client-card {
+  background-color: #f8faff !important;
+  border-color: gray;
+}
+.client-img img{
+    height: 100px;
+    width: 100px;
+}
+/* service */
+.service-content{
+    background-color: #fff6f1;
+}
+.c-2{
+    background-color: #eff7ff;
+}
+.c-2 img{
+    height: 160px;
+}
+.service-info a:hover{
+    color: black !important;
+}
+.service-content:hover{
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transform: translateY(-3px);
+  border-color: #b4c0e0;
+}
+/* Job Place */
+.place-img img{
+    transition: .3s;
+}
+.place-card img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+} 
+.place-card h4:hover {
+    color: #0d6efd;
+}
+/* Blog */
+.load-btn{
+    background-color: #05264e;
+}
+.load-btn:hover{
+    background-color: #0d6efd;
+    transform: translateY(-3px);
+}
+/* Newslatter */
+.nl-bg{
+    background-image: url("../images/News-latter/bg-newsletter.svg");
+}
+.form-control{
+    border: none !important;
+}
+/* Footer */
+.footer-bottom{
+    border-top: 1px solid #e0e6f7;
+}
+.footer-social i{
+    border-radius: 50%;
+}
+.footer-social a:hover img{
+    transform: translateY(-3px);
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.scroll-up{
+    right: 0;
+    height: 48px;
+    width: 48px;
+    line-height: 50px;
+}
+/* contact Page */
+.contact-banner{
+    background-image: url("../images/Contact/banner/banner.png");
+    background-size: cover;
+}
+.contact-info img{
+    height: 40px;
+}
+/* Conatact info */
+.info .row{
+  background-color: #dbe4f5;
+}
+/* About Page */
+/* Team */
+.team-card{
+  border: thin solid #d7dff7;
+}
+.team-img img{
+  width: 126px;
+  height: 126px;
+}
+/* Feedback */
+.feedback-card{
+  border: 1px solid #c0cef0;
+}
+.arrow-shape{
+  left: 11%;
+
+}
+.feedback-card::before{
+  content: '';
+  height: 33px;
+  width: 30px;
+  background: #fff url("../images/About/feedback/arrow.d11eaa09.png") no-repeat;
+  position: absolute;
+  bottom: -32px;
+}
+/* Cta */
+.cta-btn .btn-1:hover , .cta-btn .btn-2:hover{
+  background-color: #05264e !important;
+  color: white;
+}

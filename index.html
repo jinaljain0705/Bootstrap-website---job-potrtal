@@ -1,751 +1,1673 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Joblinker</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/images/favicon.png"
-      type="image/x-icon"
-    />
-    <!-- Fonts -->
-    <link rel="stylesheet" href="./assets/css/fonts.css" />
-    <!-- Bs-Icons  -->
-    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
-    <!-- Bs-File -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <!-- Style -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light z-1 w-100">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo.png" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <nav
-            class="navbar bg-body-tertiary p-3 rounded-3 justify-content-center"
-          >
-            <div class="container-fluid">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
-            </div>
-          </nav>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="./findjob.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" data-bs-toggle="dropdown"
-                  >Find Jobs</a
-                >
-                <ul class="dropdown-menu p-1">
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Work From Home</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Part Time Job</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Freshers Job</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Full Time Job</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Job For Women</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" data-bs-toggle="dropdown"
-                  >Services</a
-                >
-                <ul class="dropdown-menu p-1">
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Resume Writing</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item p-2" href="#"
-                      >Recruitment Services</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Career Counselling</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Freelancing</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Internship</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-            <div class="dropdown">
-              <a class="btn" href="#" role="button" data-bs-toggle="dropdown">
-                <i class="bi bi-person"></i>
-              </a>
-              <ul class="dropdown-menu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Title of Webpage -->
+  <title>Joblinker</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/Banner/favicon.png" type="image/x-icon" />
+  <!-- Fonts -->
+  <link rel="stylesheet" href="./assets/css/fonts.css" />
+  <!-- Bs-Icons  -->
+  <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
+  <!-- Bs-File -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <!-- Style -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 z-3 w-100 ">
+      <div class="container">
+        <a class="nav-logo w-25" href="#">
+          <img src="./assets/images/Banner/Logo-main.png" alt="" class="w-75" />
+        </a>
+
+        <nav class="navbar py-3 rounded-3">
+          <form class="d-flex  mx-auto" role="search">
+            <input class="form-control me-2 p-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
+        </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./findjob.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown">Find Jobs</a>
+              <ul class="dropdown-menu p-1">
                 <li>
-                  <a class="dropdown-item" href="#">Login</a>
+                  <a class="dropdown-item p-2" href="./findjob.html">Work From Home</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Register</a>
+                  <a class="dropdown-item p-2" href="./findjob.html">Part Time Job</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="./findjob.html">Freshers Job</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Full Time Job</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Job For Women</a>
                 </li>
               </ul>
-            </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu p-1">
+                <li>
+                  <a class="dropdown-item p-2" href="#">Resume Writing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Recruitment Services</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Career Counselling</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Freelancing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Internship</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <a class="btn" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-person"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Login</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Register</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
-    <main>
-      <!-- banner -->
-      <section class="banner position-relative">
-        <div id="carouselCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner bg-dark position-relative">
-            <!-- Banner-1 -->
-            <div class="carousel-item banner-1">
-              <img
-                src="./assets/images/banner-3.jpg"
-                class="d-block w-100 opacity-50"
-                alt="..."
-              />
-              <div class="row">
-                <div class="col">
-                  <div
-                    class="carousel-caption d-none d-md-block position-absolute text-start"
-                  >
-                    <h1 class="display-1 fw-bold">
-                      Shape the Future <br />
-                      <span class="small-heading">With us </span>
-                    </h1>
-                    <p class="mt-3">
-                      Looking for a new career opportunity? We have multiple
-                      positions open! Apply now and take the <br />next step in
-                      your professional journey.
-                    </p>
-                    <a href="#" class="btn mt-3 py-3 px-5 fw-bold join-btn"
-                      >Join Now</a
-                    >
-                  </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- banner -->
+    <section class="banner z-3">
+      <div id="carouselCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner bg-dark position-relative">
+          <!-- Banner-1 -->
+          <div class="carousel-item banner-1">
+            <img src="./assets/images/Banner/banner-3.jpg" class="d-block w-100 opacity-50" alt="..." />
+            <div class="row">
+              <div class="col">
+                <div class="carousel-caption d-none d-md-block position-absolute text-start">
+                  <h1 class="display-1 fw-bold">
+                    Shape the Future <br />
+                    <span class="small-heading">With us </span>
+                  </h1>
+                  <p class="mt-3">
+                    Looking for a new career opportunity? We have multiple
+                    positions open! Apply now and take the <br />next step in
+                    your professional journey.
+                  </p>
+                  <a href="#" class="btn mt-3 py-3 px-5 fw-bold join-btn">Join Now</a>
                 </div>
               </div>
             </div>
-            <!-- banner-2 -->
-            <div class="carousel-item active banner-2">
-              <img
-                src="./assets/images/banner-5.jpg"
-                class="d-block w-100 opacity-50 bg-dark"
-                alt="..."
-              />
-              <div
-                class="carousel-caption d-none d-md-block text-start bottom-0"
-              >
-                <h1 class="display-1 fw-bold lh-1">
-                  Empowering <br />Employers <br />for Success
-                </h1>
-                <p class="fs-5">
-                  Streamlined HR Solutions | Recruitment |
-                  <br />Workforce Management
+          </div>
+          <!-- banner-2 -->
+          <div class="carousel-item active banner-2">
+            <img src="./assets/images/Banner/banner-5.jpg" class="d-block w-100 opacity-50 bg-dark" alt="..." />
+            <div class="carousel-caption d-none d-md-block text-start bottom-0">
+              <h1 class="display-1 fw-bold lh-1">
+                Empowering <br />Employers <br />for Success
+              </h1>
+              <p class="fs-5">
+                Streamlined HR Solutions | Recruitment |
+                <br />Workforce Management
+              </p>
+              <a href="#" class="btn py-2 px-5 bg-success">Discover More..</a>
+            </div>
+          </div>
+          <!-- Banner-3 -->
+          <div class="carousel-item banner-3">
+            <img src="./assets/images/Banner/banner-5.jpg" class="d-block w-100 opacity-25" alt="..." />
+            <div class="carousel-caption d-none d-md-block top-50">
+              <h1 class="display-1 fw-bold lh-1">Featured Jobs For You</h1>
+              <p>Check Out the latest top job listings and aplly today.</p>
+              <a href="#" class="btn py-2 px-5 bg-success">Find Job</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section> 
+    <!--Job -->
+    <section class="job">
+      <div class="container">
+        <div class="row py-100">
+          <h1 class="text-center pb-2">Latest Job Open</h1>
+          <p class="text-secondary text-center fs-5 fw-semibold mb-0">
+            Search and connect with the right candidates faster.
+          </p>
+          <div class="job-category py-5 d-flex justify-content-center gap-2">
+            <a href="#" class="btn text-primary">
+              <i class="bi bi-kanban pe-2"></i>
+              Management
+            </a>
+            <a href="#" class="btn text-seconday">
+              <i class="bi bi-megaphone-fill pe-2"></i>
+              Marketing & Sale
+            </a>
+            <a href="#" class="btn text-seconday">
+              <i class="bi bi-bank pe-2"></i>
+              Finance
+            </a>
+            <a href="#" class="btn text-seconday">
+              <i class="bi bi-person-fill pe-2"></i>
+              Human Resource
+            </a>
+            <a href="#" class="btn text-seconday">
+              <i class="bi bi-card-heading pe-2"></i>
+              Retail & Products
+            </a>
+            <a href="#" class="btn text-seconday">
+              <i class="bi bi-journal-text pe-2"></i>
+              Content Writer
+            </a>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="job-card bg-light ps-3 pe-1 rounded-2">
+              <div class="job-img d-flex ps-2 pb-3">
+                <img src="./assets/images/job/brand-1.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3 fw-semibold">Linkedin</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                    <i class="bi bi-geo-alt-fill pe-1"></i>
+                    New York,US
+                  </p>
+                </div>
+              </div>
+              <div class="job-description">
+                <h6 class="pt-3 fw-semibold mb-0 pb-1">
+                  UI / UX Designer fulltime
+                </h6>
+              </div>
+              <div class="pt-2 d-flex gap-4 ps-1">
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-suitcase-lg pe-1"></i>
+                  Fulltime
+                </span>
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-clock-history pe-1"></i>
+                  5 Minutes ago
+                </span>
+              </div>
+              <div class="job-description pt-3 pb-2">
+                <p class="fs-14 paragraph-color pe-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae architecto eveniet, dolor quo repellendus
+                  pariatur
                 </p>
-                <a href="#" class="btn py-2 px-5 bg-success">Discover More..</a>
               </div>
-            </div>
-            <!-- Banner-3 -->
-            <div class="carousel-item banner-3">
-              <img
-                src="./assets/images/banner-5.jpg"
-                class="d-block w-100 opacity-25"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block top-50">
-                <h1 class="display-1 fw-bold lh-1">Featured Jobs For You</h1>
-                <p>Check Out the latest top job listings and aplly today.</p>
-                <a href="#" class="btn py-2 px-5 bg-success">Find Job</a>
+              <div class="job-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Adobe</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Figma</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Photoshop</a>
+              </div>
+              <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                <div class="col-7 d-flex align-items-center">
+                  <span class="fs-4 fw-bold text-primary">$500</span>
+                  <span class="pt-2">/Hour</span>
+                </div>
+                <div class="col-5 d-flex justify-content-center">
+                  <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary job-btn">Apply Now</a>
+                </div>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <!--Job -->
-      <section class="job">
-        <div class="container">
-          <div class="row py-120">
-            <h1 class="text-center pb-5">Latest Job Open</h1>
-
-            <div class="col-xl-3 col-lg-4">
-              <div class="job-card bg-light p-3 rounded-2">
-                <div class="job-img d-flex ps-2 pb-2">
-                  <img src="./assets/images/job/brand-1.png" alt="" class="" />
-                  <div class="img-content">
-                    <h5 class="mb-0 ps-3">Linkedin</h5>
-                    <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
-                      <i class="bi bi-geo-alt-fill pe-1"></i>
-                      New York,US
-                    </p>
-                  </div>
-                </div>
-                <div class="job-description">
-                  <h5 class="pt-3 fw-semibold mb-0 pb-1">
-                    UI / UX Designer fulltime
-                  </h5>
-                </div>
-                <div class="pt-2 d-flex gap-4 ps-1">
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-suitcase-lg pe-2"></i>
-                    Fulltime
-                  </span>
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-clock-history pe-2"></i>
-                    Minutes ago
-                  </span>
-                </div>
-                <div class="job-description pt-3 pb-2">
-                  <p class="fs-14">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    illum minus adipisci laudantium quasi iste dicta omnis
-                    obcaecati! Veritatis minima
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="job-card bg-light ps-3 pe-1 rounded-2">
+              <div class="job-img d-flex ps-2 pb-3">
+                <img src="./assets/images/job/brand-2.png" alt="" class="" />
+                <div class="img-content">
+                  <h6 class="mb-0 ps-3">Adobe</h6>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                    <i class="bi bi-geo-alt-fill pe-1"></i>
+                    New York,US
                   </p>
                 </div>
-                <div class="job-skills d-flex gap-2 pb-2">
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Adobe</a
-                  >
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Figma</a
-                  >
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Photoshop</a
-                  >
+              </div>
+              <div class="job-description">
+                <h6 class="pt-3 fw-semibold mb-0 pb-1">
+                  Full Stack Engineer
+                </h6>
+              </div>
+              <div class="pt-2 d-flex gap-4 ps-1">
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-suitcase-lg pe-2"></i>
+                  Fulltime
+                </span>
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-clock-history pe-2"></i>
+                  5 Minutes ago
+                </span>
+              </div>
+              <div class="job-description pt-3 pb-2">
+                <p class="fs-14 paragraph-color pe-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae architecto eveniet, dolor quo repellendus
+                  pariatur
+                </p>
+              </div>
+              <div class="job-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">React</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">NodeJS</a>
+              </div>
+              <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                <div class="col-7 d-flex align-items-center">
+                  <span class="fs-4 fw-bold text-primary">$800</span>
+                  <span class="pt-2">/Hour</span>
                 </div>
-                <div
-                  class="job-salary d-flex justify-content-between py-4 align-items-center pt-4"
-                >
-                  <div class="col-7 d-flex align-items-center">
-                    <span class="fs-4 fw-bold text-primary">&500</span>
-                    <span class="pt-2">/Hour</span>
-                  </div>
-                  <div class="col-five">
-                    <a
-                      href="#"
-                      class="btn bg-body-secondary py-2 fs-14 px-3 text-primary"
-                      >Apply Now</a
-                    >
-                  </div>
+                <div class="col-5 d-flex justify-content-center">
+                  <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary job-btn">Apply Now</a>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-4">
-              <div class="job-card bg-light p-3 rounded-2 pt-5">
-                <div class="job-img d-flex ps-2 pb-2">
-                  <img src="./assets/images/job/brand-2.png" alt="" class="" />
-                  <div class="img-content">
-                    <h5 class="mb-0 ps-3">Adobe</h5>
-                    <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
-                      <i class="bi bi-geo-alt-fill pe-1"></i>
-                      New York,US
-                    </p>
-                  </div>
-                </div>
-                <div class="job-description">
-                  <h5 class="pt-3 fw-semibold mb-0 pb-1">
-                    Full Stack Engineer
-                  </h5>
-                </div>
-                <div class="pt-2 d-flex gap-4 ps-1">
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-suitcase-lg pe-2"></i>
-                    Fulltime
-                  </span>
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-clock-history pe-2"></i>
-                    5 Minutes ago
-                  </span>
-                </div>
-                <div class="job-description pt-3 pb-2">
-                  <p class="fs-14">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    illum minus adipisci laudantium quasi iste dicta omnis
-                    obcaecati! Veritatis minima
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="job-card bg-light ps-3 pe-1 rounded-2">
+              <div class="job-img d-flex ps-2 pb-3">
+                <img src="./assets/images/job/brand-3.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3">Bing Search</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                    <i class="bi bi-geo-alt-fill pe-1"></i>
+                    New York,US
                   </p>
                 </div>
-                <div class="job-skills d-flex gap-2 pb-2">
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >React</a
-                  >
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >NodeJS</a
-                  >
+              </div>
+              <div class="job-description">
+                <h6 class="pt-3 fw-semibold mb-0 pb-1">
+                  Java Software Engineer
+                </h6>
+              </div>
+              <div class="pt-2 d-flex gap-4 ps-1">
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-suitcase-lg pe-2"></i>
+                  Fulltime
+                </span>
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-clock-history pe-2"></i>
+                  6 Minutes ago
+                </span>
+              </div>
+              <div class="job-description pt-3 pb-2">
+                <p class="fs-14 paragraph-color pe-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae architecto eveniet, dolor quo repellendus
+                  pariatur
+                </p>
+              </div>
+              <div class="job-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Python</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">AWS</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Photoshop</a>
+              </div>
+              <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                <div class="col-7 d-flex align-items-center">
+                  <span class="fs-4 fw-bold text-primary">$250</span>
+                  <span class="pt-2">/Hour</span>
                 </div>
-                <div
-                  class="job-salary d-flex justify-content-between py-4 align-items-center pt-4"
-                >
-                  <div class="col-7 d-flex align-items-center">
-                    <span class="fs-4 fw-bold text-primary">&800</span>
-                    <span class="pt-2">/Hour</span>
-                  </div>
-                  <div class="col-five">
-                    <a
-                      href="#"
-                      class="btn bg-body-secondary py-2 fs-14 px-3 text-primary"
-                      >Apply Now</a
-                    >
-                  </div>
+                <div class="col-5 d-flex justify-content-center">
+                  <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary job-btn">Apply Now</a>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-4">
-              <div class="job-card bg-light p-3 rounded-2 pt-5">
-                <div class="job-img d-flex ps-2 pb-2">
-                  <img src="./assets/images/job/brand-3.png" alt="" class="" />
-                  <div class="img-content">
-                    <h5 class="mb-0 ps-3">Bing Search</h5>
-                    <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
-                      <i class="bi bi-geo-alt-fill pe-1"></i>
-                      New York,US
-                    </p>
-                  </div>
-                </div>
-                <div class="job-description">
-                  <h5 class="pt-3 fw-semibold mb-0 pb-1">
-                    Java Software Engineer
-                  </h5>
-                </div>
-                <div class="pt-2 d-flex gap-4 ps-1">
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-suitcase-lg pe-2"></i>
-                    Fulltime
-                  </span>
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-clock-history pe-2"></i>
-                    6 Minutes ago
-                  </span>
-                </div>
-                <div class="job-description pt-3 pb-2">
-                  <p class="fs-14">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    illum minus adipisci laudantium quasi iste dicta omnis
-                    obcaecati! Veritatis minima
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="job-card bg-light ps-3 pe-1 rounded-2">
+              <div class="job-img d-flex ps-2 pb-3">
+                <img src="./assets/images/job/brand-4.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3">Dailymotion</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                    <i class="bi bi-geo-alt-fill pe-1"></i>
+                    New York,US
                   </p>
                 </div>
-                <div class="job-skills d-flex gap-2 pb-2">
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Python</a
-                  >
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >AWS</a
-                  >
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Photoshop</a
-                  >
+              </div>
+              <div class="job-description">
+                <h6 class="pt-3 fw-semibold mb-0 pb-1">Frontend Developer</h6>
+              </div>
+              <div class="pt-2 d-flex gap-4 ps-1">
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-suitcase-lg pe-2"></i>
+                  Fulltime
+                </span>
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-clock-history pe-2"></i>
+                  6 Minutes ago
+                </span>
+              </div>
+              <div class="job-description pt-3 pb-2">
+                <p class="fs-14 paragraph-color pe-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae architecto eveniet, dolor quo repellendus
+                  pariatur
+                </p>
+              </div>
+              <div class="job-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">TypeScript</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Java</a>
+              </div>
+              <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                <div class="col-7 d-flex align-items-center">
+                  <span class="fs-4 fw-bold text-primary">$250</span>
+                  <span class="pt-2">/Hour</span>
                 </div>
-                <div
-                  class="job-salary d-flex justify-content-between py-4 align-items-center pt-4"
-                >
-                  <div class="col-7 d-flex align-items-center">
-                    <span class="fs-4 fw-bold text-primary">&250</span>
-                    <span class="pt-2">/Hour</span>
-                  </div>
-                  <div class="col-five">
-                    <a
-                      href="#"
-                      class="btn bg-body-secondary py-2 fs-14 px-3 text-primary"
-                      >Apply Now</a
-                    >
-                  </div>
+                <div class="col-5 d-flex justify-content-center">
+                  <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary job-btn">Apply Now</a>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-4">
-              <div class="job-card bg-light p-3 rounded-2 pt-5">
-                <div class="job-img d-flex ps-2 pb-2">
-                  <img src="./assets/images/job/brand-4.png" alt="" class="" />
-                  <div class="img-content">
-                    <h5 class="mb-0 ps-3">Dailymotion</h5>
-                    <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
-                      <i class="bi bi-geo-alt-fill pe-1"></i>
-                      New York,US
-                    </p>
-                  </div>
-                </div>
-                <div class="job-description">
-                  <h5 class="pt-3 fw-semibold mb-0 pb-1">Frontend Developer</h5>
-                </div>
-                <div class="pt-2 d-flex gap-4 ps-1">
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-suitcase-lg pe-2"></i>
-                    Fulltime
-                  </span>
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-clock-history pe-2"></i>
-                    6 Minutes ago
-                  </span>
-                </div>
-                <div class="job-description pt-3 pb-2">
-                  <p class="fs-14">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    illum minus adipisci laudantium quasi iste dicta omnis
-                    obcaecati! Veritatis minima
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="job-card bg-light ps-3 pe-1 rounded-2">
+              <div class="job-img d-flex ps-2 pb-3">
+                <img src="./assets/images/job/brand-5.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3">Linkedin</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                    <i class="bi bi-geo-alt-fill pe-1"></i>
+                    New York,US
                   </p>
                 </div>
-                <div class="job-skills d-flex gap-2 pb-2">
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >TypeScript</a
-                  >
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Java</a
-                  >
+              </div>
+              <div class="job-description">
+                <h6 class="pt-3 fw-semibold mb-0 pb-1">
+                  React Native Web Developer
+                </h6>
+              </div>
+              <div class="pt-2 d-flex gap-4 ps-1">
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-suitcase-lg pe-2"></i>
+                  Fulltime
+                </span>
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-clock-history pe-2"></i>
+                  4 Minutes ago
+                </span>
+              </div>
+              <div class="job-description pt-3 pb-2">
+                <p class="fs-14 paragraph-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  illum minus adipisci laudantium quasi iste dicta omnis
+                  obcaecati! Veritatis minima
+                </p>
+              </div>
+              <div class="job-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Angular</a>
+              </div>
+              <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                <div class="col-7 d-flex align-items-center">
+                  <span class="fs-4 fw-bold text-primary">$500</span>
+                  <span class="pt-2">/Hour</span>
                 </div>
-                <div
-                  class="job-salary d-flex justify-content-between py-4 align-items-center pt-4"
-                >
-                  <div class="col-7 d-flex align-items-center">
-                    <span class="fs-4 fw-bold text-primary">&250</span>
-                    <span class="pt-2">/Hour</span>
-                  </div>
-                  <div class="col-five">
-                    <a
-                      href="#"
-                      class="btn bg-body-secondary py-2 fs-14 px-3 text-primary"
-                      >Apply Now</a
-                    >
-                  </div>
+                <div class="col-5 d-flex justify-content-center">
+                  <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary job-btn">Apply Now</a>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-4">
-              <div class="job-card bg-light p-3 rounded-2">
-                <div class="job-img d-flex ps-2 pb-2">
-                  <img src="./assets/images/job/brand-5.png" alt="" class="" />
-                  <div class="img-content">
-                    <h5 class="mb-0 ps-3">Linkedin</h5>
-                    <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
-                      <i class="bi bi-geo-alt-fill pe-1"></i>
-                      New York,US
-                    </p>
-                  </div>
-                </div>
-                <div class="job-description">
-                  <h5 class="pt-3 fw-semibold mb-0 pb-1">
-                    React Native Web Developer
-                  </h5>
-                </div>
-                <div class="pt-2 d-flex gap-4 ps-1">
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-suitcase-lg pe-2"></i>
-                    Fulltime
-                  </span>
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-clock-history pe-2"></i>
-                    4 Minutes ago
-                  </span>
-                </div>
-                <div class="job-description pt-3 pb-2">
-                  <p class="fs-14">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    illum minus adipisci laudantium quasi iste dicta omnis
-                    obcaecati! Veritatis minima
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="job-card bg-light ps-3 pe-1 rounded-2">
+              <div class="job-img d-flex ps-2 pb-3">
+                <img src="./assets/images/job/brand-6.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3">Quora JSC</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                    <i class="bi bi-geo-alt-fill pe-1"></i>
+                    New York,US
                   </p>
                 </div>
-                <div class="job-skills d-flex gap-2 pb-2">
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Angular</a
-                  >
+              </div>
+              <div class="job-description">
+                <h6 class="pt-3 fw-semibold mb-0 pb-1">
+                  Senior System Engineer
+                </h6>
+              </div>
+              <div class="pt-2 d-flex gap-4 ps-1">
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-suitcase-lg pe-2"></i>
+                  Fulltime
+                </span>
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-clock-history pe-2"></i>
+                  5 Minutes ago
+                </span>
+              </div>
+              <div class="job-description pt-3 pb-2">
+                <p class="fs-14 paragraph-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  illum minus adipisci laudantium quasi iste dicta omnis
+                  obcaecati! Veritatis minima
+                </p>
+              </div>
+              <div class="job-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">PHP</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Android</a>
+              </div>
+              <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                <div class="col-7 d-flex align-items-center">
+                  <span class="fs-4 fw-bold text-primary">$800</span>
+                  <span class="pt-2">/Hour</span>
                 </div>
-                <div
-                  class="job-salary d-flex justify-content-between py-4 align-items-center pt-4"
-                >
-                  <div class="col-7 d-flex align-items-center">
-                    <span class="fs-4 fw-bold text-primary">&500</span>
-                    <span class="pt-2">/Hour</span>
-                  </div>
-                  <div class="col-five">
-                    <a
-                      href="#"
-                      class="btn bg-body-secondary py-2 fs-14 px-3 text-primary"
-                      >Apply Now</a
-                    >
-                  </div>
+                <div class="col-5 d-flex justify-content-center">
+                  <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary job-btn">Apply Now</a>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-4">
-              <div class="job-card bg-light p-3 rounded-2 pt-5">
-                <div class="job-img d-flex ps-2 pb-2">
-                  <img src="./assets/images/job/brand-6.png" alt="" class="" />
-                  <div class="img-content">
-                    <h5 class="mb-0 ps-3">Quora JSC</h5>
-                    <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
-                      <i class="bi bi-geo-alt-fill pe-1"></i>
-                      New York,US
-                    </p>
-                  </div>
-                </div>
-                <div class="job-description">
-                  <h5 class="pt-3 fw-semibold mb-0 pb-1">
-                    Senior System Engineer
-                  </h5>
-                </div>
-                <div class="pt-2 d-flex gap-4 ps-1">
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-suitcase-lg pe-2"></i>
-                    Fulltime
-                  </span>
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-clock-history pe-2"></i>
-                    5 Minutes ago
-                  </span>
-                </div>
-                <div class="job-description pt-3 pb-2">
-                  <p class="fs-14">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    illum minus adipisci laudantium quasi iste dicta omnis
-                    obcaecati! Veritatis minima
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="job-card bg-light ps-3 pe-1 rounded-2">
+              <div class="job-img d-flex ps-2 pb-3">
+                <img src="./assets/images/job/brand-7.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3">Nintendo</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                    <i class="bi bi-geo-alt-fill pe-1"></i>
+                    New York,US
                   </p>
                 </div>
-                <div class="job-skills d-flex gap-2 pb-2">
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >PHP</a
-                  >
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Android</a
-                  >
+              </div>
+              <div class="job-description">
+                <h6 class="pt-3 fw-semibold mb-0 pb-1">Products Manager</h6>
+              </div>
+              <div class="pt-2 d-flex gap-4 ps-1">
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-suitcase-lg pe-2"></i>
+                  Fulltime
+                </span>
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-clock-history pe-2"></i>
+                  6 Minutes ago
+                </span>
+              </div>
+              <div class="job-description pt-3 pb-2">
+                <p class="fs-14 paragraph-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  illum minus adipisci laudantium quasi iste dicta omnis
+                  obcaecati! Veritatis minima
+                </p>
+              </div>
+              <div class="job-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">ASP.Net</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Figma</a>
+              </div>
+              <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                <div class="col-7 d-flex align-items-center">
+                  <span class="fs-4 fw-bold text-primary">$250</span>
+                  <span class="pt-2">/Hour</span>
                 </div>
-                <div
-                  class="job-salary d-flex justify-content-between py-4 align-items-center pt-4"
-                >
-                  <div class="col-7 d-flex align-items-center">
-                    <span class="fs-4 fw-bold text-primary">&800</span>
-                    <span class="pt-2">/Hour</span>
-                  </div>
-                  <div class="col-five">
-                    <a
-                      href="#"
-                      class="btn bg-body-secondary py-2 fs-14 px-3 text-primary"
-                      >Apply Now</a
-                    >
-                  </div>
+                <div class="col-5 d-flex justify-content-center">
+                  <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary job-btn">Apply Now</a>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-4">
-              <div class="job-card bg-light p-3 rounded-2 pt-5">
-                <div class="job-img d-flex ps-2 pb-2">
-                  <img src="./assets/images/job/brand-7.png" alt="" class="" />
-                  <div class="img-content">
-                    <h5 class="mb-0 ps-3">Nintendo</h5>
-                    <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
-                      <i class="bi bi-geo-alt-fill pe-1"></i>
-                      New York,US
-                    </p>
-                  </div>
-                </div>
-                <div class="job-description">
-                  <h5 class="pt-3 fw-semibold mb-0 pb-1">Products Manager</h5>
-                </div>
-                <div class="pt-2 d-flex gap-4 ps-1">
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-suitcase-lg pe-2"></i>
-                    Fulltime
-                  </span>
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-clock-history pe-2"></i>
-                    6 Minutes ago
-                  </span>
-                </div>
-                <div class="job-description pt-3 pb-2">
-                  <p class="fs-14">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    illum minus adipisci laudantium quasi iste dicta omnis
-                    obcaecati! Veritatis minima
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="job-card bg-light ps-3 pe-1 rounded-2">
+              <div class="job-img d-flex ps-2 pb-3">
+                <img src="./assets/images/job/brand-8.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3">Linkedin</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                    <i class="bi bi-geo-alt-fill pe-1"></i>
+                    New York,US
                   </p>
-                </div>
-                <div class="job-skills d-flex gap-2 pb-2">
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >ASP.Net</a
-                  >
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Figma</a
-                  >
-                </div>
-                <div
-                  class="job-salary d-flex justify-content-between py-4 align-items-center pt-4"
-                >
-                  <div class="col-7 d-flex align-items-center">
-                    <span class="fs-4 fw-bold text-primary">&250</span>
-                    <span class="pt-2">/Hour</span>
-                  </div>
-                  <div class="col-five">
-                    <a
-                      href="#"
-                      class="btn bg-body-secondary py-2 fs-14 px-3 text-primary"
-                      >Apply Now</a
-                    >
-                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-xl-3 col-lg-4">
-              <div class="job-card bg-light p-3 rounded-2 pt-5">
-                <div class="job-img d-flex ps-2 pb-2">
-                  <img src="./assets/images/job/brand-8.png" alt="" class="" />
-                  <div class="img-content">
-                    <h5 class="mb-0 ps-3">Linkedin</h5>
-                    <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
-                      <i class="bi bi-geo-alt-fill pe-1"></i>
-                      New York,US
-                    </p>
-                  </div>
+              <div class="job-description">
+                <h6 class="pt-3 fw-semibold mb-0 pb-1">
+                  Lead Quality Control QA
+                </h6>
+              </div>
+              <div class="pt-2 d-flex gap-4 ps-1">
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-suitcase-lg pe-2"></i>
+                  Fulltime
+                </span>
+                <span class="fs-13 text-secondary">
+                  <i class="bi bi-clock-history pe-2"></i>
+                  6 Minutes ago
+                </span>
+              </div>
+              <div class="job-description pt-3 pb-2">
+                <p class="fs-14 paragraph-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  illum minus adipisci laudantium quasi iste dicta omnis
+                  obcaecati! Veritatis minima
+                </p>
+              </div>
+              <div class="job-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">IOS</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Laravel</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Golang</a>
+              </div>
+              <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                <div class="col-7 d-flex align-items-center">
+                  <span class="fs-4 fw-bold text-primary">$250</span>
+                  <span class="pt-2">/Hour</span>
                 </div>
-                <div class="job-description">
-                  <h5 class="pt-3 fw-semibold mb-0 pb-1">
-                    Lead Quality Control QA
-                  </h5>
-                </div>
-                <div class="pt-2 d-flex gap-4 ps-1">
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-suitcase-lg pe-2"></i>
-                    Fulltime
-                  </span>
-                  <span class="fs-14 text-secondary">
-                    <i class="bi bi-clock-history pe-2"></i>
-                    6 Minutes ago
-                  </span>
-                </div>
-                <div class="job-description pt-3 pb-2">
-                  <p class="fs-14">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    illum minus adipisci laudantium quasi iste dicta omnis
-                    obcaecati! Veritatis minima
-                  </p>
-                </div>
-                <div class="job-skills d-flex gap-2 pb-2">
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >IOS</a
-                  >
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Laravel</a
-                  >
-                  <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3"
-                    >Golang</a
-                  >
-                </div>
-                <div
-                  class="job-salary d-flex justify-content-between py-4 align-items-center pt-4"
-                >
-                  <div class="col-7 d-flex align-items-center">
-                    <span class="fs-4 fw-bold text-primary">&250</span>
-                    <span class="pt-2">/Hour</span>
-                  </div>
-                  <div class="col-five">
-                    <a
-                      href="#"
-                      class="btn bg-body-secondary py-2 fs-14 px-3 text-primary"
-                      >Apply Now</a
-                    >
-                  </div>
+                <div class="col-5 d-flex justify-content-center">
+                  <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary job-btn">Apply Now</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Search Job Section -->
-      <section class="Search-job py-120">
-        <div class="container">
-          <div class="row">
+      </div>
+    </section>
+    <!-- Search Job Section -->
+    <section class="Search-job py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 position-relative">
+            <div class="search-img z-1 ">
+              <img src="./assets/images/Search-job/img1.png" alt="" class="z-1 rounded-5 figure-img mx-auto" />
+              <img src="./assets/images/Search-job/img-chart.png" alt="" class="search-1 position-absolute z-n1" />
+              <img src="./assets/images/Search-job/controlcard.png" alt="" class="search-2 position-absolute z-n1" />
+            </div>
+          </div>
+          <div class=" col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center pt-4">
+            <div class="search-content px-5 pt-2">
+              <span class="h3 fw-bold text-secondary">Milloins of Jobs</span>
+              <h1 class="fs-52 fw-bold py-2">
+                Find The One That’s <br />
+                <span class="text-primary">Right </span> For You
+              </h1>
+              <p class="mt-4">
+                Search all the open positions on the web. Get your own
+                personalized salary estimate. Read reviews on over 600,000
+                companies worldwide. The right job is out there
+              </p>
+              <div class="s-job-bottom d-flex align-items-end">
+                <a href="#" class="btn bg-primary text-white px-4 py-2 mt-3">Search Jobs</a>
+                <a href="#" class="text-secondary tetx-underline ps-4 learn-more">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Work -->
+    <section class="our-work py-120 pb-0 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 text-center">
+            <h3 class="text-primary display-4 fw-bold">25 K+</h3>
+            <span class="fw-bold fs-5">Completed Case</span>
+            <p class="text-secondary fs-14 pt-2 px-5">
+              We always provide people a complete solution upon focused of any
+              business
+            </p>
+          </div>
+          <div class="col-3 text-center">
+            <h3 class="text-primary display-4 fw-bold">17 +</h3>
+            <span class="fw-bold fs-5">Our Office</span>
+            <p class="text-secondary fs-14 pt-2 px-5">
+              We always provide people a complete solution upon focused of any
+              business
+            </p>
+          </div>
+          <div class="col-3 text-center">
+            <h3 class="text-primary display-4 fw-bold">86 +</h3>
+            <span class="fw-bold fs-5">Skilled People</span>
+            <p class="text-secondary fs-14 pt-2 px-5">
+              We always provide people a complete solution upon focused of any
+              business
+            </p>
+          </div>
+          <div class="col-3 text-center">
+            <h3 class="text-primary display-4 fw-bold">28 +</h3>
+            <span class="fw-bold fs-5">Happy Clients</span>
+            <p class="text-secondary fs-14 pt-2 px-5">
+              We always provide people a complete solution upon focused of any
+              business
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our client -->
+    <section class="client py-100">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center pt-5 pb-1 fw-semibold">Top Candidates</h1>
+          <p class="text-secondary text-center fs-5 fw-semibold mb-5">
+            Jobs is a curated job board of the best jobs for developers,
+            designers and marketers in the tech industry.
+          </p>
+          <div class="col-3 mt-4">
+            <div class="client-card bg-light p-3 rounded-4 pt-4">
+              <div class="client-img d-flex">
+                <img src="./assets/images/Clients/user1.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3 pt-3">Robert Fox</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-2">
+                    UI/UX Designer
+                  </p>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(65)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="client-desc pt-4 pb-3">
+                <p class="fs-13 paragraph-color">
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero repellendus magni, atque delectus molestias quis?
+                </p>
+              </div>
+              <div class="client-skills d-flex gap-2 pb-2 mb-1">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Figma</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">AdobeXD</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">PSD</a>
+              </div>
+              <div class="client-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">App</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Digital</a>
+              </div>
+              <div class="client-info d-flex justify-content-between border-top mt-4 pt-4 fs-14">
+                <p class="mb-0 ps-2 text-secondary">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fw-semibold">
+                  <i class="bi bi-clock-history pe-1 text-secondary"></i>
+                  $45/Hour
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mt-4">
+            <div class="client-card bg-light p-3 rounded-4 pt-4">
+              <div class="client-img d-flex">
+                <img src="./assets/images/Clients/user2.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3 pt-3">Cody Fisher</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-2">
+                    Python Developer
+                  </p>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(65)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="client-desc pt-4 pb-3">
+                <p class="fs-13 paragraph-color">
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero repellendus magni, atque delectus molestias quis?
+                </p>
+              </div>
+              <div class="client-skills d-flex gap-2 pb-2 mb-1">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Figma</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">AdobeXD</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">PSD</a>
+              </div>
+              <div class="client-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">App</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Digital</a>
+              </div>
+              <div class="client-info d-flex justify-content-between border-top mt-4 pt-4 fs-14">
+                <p class="mb-0 ps-2 text-secondary">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fw-semibold">
+                  <i class="bi bi-clock-history pe-1 text-secondary"></i>
+                  $45/Hour
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mt-4">
+            <div class="client-card bg-light p-3 rounded-4 pt-4">
+              <div class="client-img d-flex">
+                <img src="./assets/images/Clients/user4.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3 pt-3">Janne Cooper</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-2">Network</p>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(65)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="client-desc pt-4 pb-3">
+                <p class="fs-13 paragraph-color">
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero repellendus magni, atque delectus molestias quis?
+                </p>
+              </div>
+              <div class="client-skills d-flex gap-2 pb-2 mb-1">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Figma</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">AdobeXD</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">PSD</a>
+              </div>
+              <div class="client-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">App</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Digital</a>
+              </div>
+              <div class="client-info d-flex justify-content-between border-top mt-4 pt-4 fs-14">
+                <p class="mb-0 ps-2 text-secondary">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fw-semibold">
+                  <i class="bi bi-clock-history pe-1 text-secondary"></i>
+                  $45/Hour
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mt-4">
+            <div class="client-card bg-light p-3 rounded-4 pt-4">
+              <div class="client-img d-flex">
+                <img src="./assets/images/Clients/user5.png" alt="" class="" />
+                <div class="img-content">
+                  <h5 class="mb-0 ps-3 pt-3">Floyd Miles</h5>
+                  <p class="mb-0 ps-3 fs-13 text-secondary pt-2">
+                    Photo Editing
+                  </p>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(65)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="client-desc pt-4 pb-3">
+                <p class="fs-13 paragraph-color">
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero repellendus magni, atque delectus molestias quis?
+                </p>
+              </div>
+              <div class="client-skills d-flex gap-2 pb-2 mb-1">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Figma</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">AdobeXD</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">PSD</a>
+              </div>
+              <div class="client-skills d-flex gap-2 pb-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">App</a>
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Digital</a>
+              </div>
+              <div class="client-info d-flex justify-content-between border-top mt-4 pt-4 fs-14">
+                <p class="mb-0 ps-2 text-secondary">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fw-semibold">
+                  <i class="bi bi-clock-history pe-1 text-secondary"></i>
+                  $45/Hour
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- profile -->
+    <section class="profile py-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="profile-img">
+              <img src="./assets/images/Profile/img-profile.png" alt="" class="rounded-4">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="profile-content mt-3 ps-5 ms-1">
+              <h5 class="text-secondary fw-bold pt-2 pb-2">Create-Profile</h5>
+              <h1 class="fw-semibold lh-sm">Create Your Personal Account <span class="text-primary">Profile</span></h1>
+              <p class="text-secondary fw-semibold py-2">
+                Work Profile is a personality assessment that
+                measures an individual's work personality through
+                their workplace traits, social and emotional traits;
+                as well as the values and aspirations that drive them forward.
+              </p>
+              <a href="#" class="btn px-4 py-2 bg-primary text-white"> Create Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recruiters -->
+    <section class="recruiters py-100">
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <h1 class="pb-1 fw-semibold">Top Recruiters</h1>
+          <p class="text-secondary fs-5 fw-semibold">
+            Discover your next career move, freelance gig, or internship
+          </p>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-1.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Linkedin</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(68)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 25 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-2.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Adobe</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(42)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 17 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-3.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Dailymotion</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(46)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 65 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-4.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">NewSum</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(68)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 25 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-5.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">PowerHome</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(87)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 34 Open Job </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-6.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Whop.com</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(34)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 56 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-7.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">GreenWood</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(124)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 78 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-8.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Kentucky</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(54)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 98 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-6.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Quiety</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(68)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 25 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-2.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Honda</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(42)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 17 Open Job </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-5.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Toyota</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(34)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 26 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-3.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Lexux</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(27)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 54 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-6.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Ondo</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(54)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 58 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-2.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Square</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(16)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 37 Open Job </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rec-card bg-light p-3 rounded-4">
+              <div class="rec-img d-flex align-items-center">
+                <img src="./assets/images/job/brand-8.png" alt="" class="object-fit-contain" />
+                <div class="rec-content mt-2">
+                  <span class="fs-6 ps-3 fw-bold">Vista</span>
+                  <div class="ratings-star ps-3 d-flex pt-1">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <p class="ps-2">(97)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-info d-flex justify-content-between mt-2">
+                <p class="mb-0 text-secondary fs-13">
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  New York,US
+                </p>
+                <span class="fs-13 text-secondary"> 43 Open Job </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service -->
+    <section class="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="service-content d-flex px-5 py-4 rounded-4">
+              <img src="./assets/images/service/job-tools.png" alt="" class="py-3" />
+              <div class="service-info ps-4 py-3">
+                <h3 class="fw-semibold">Job Tools Services</h3>
+                <p class="fs-14 text-secondary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam laoreet rutrum quam, id faucibus erat interdum a.
+                  Curabitur eget tortor a nulla interdum semper.
+                </p>
+                <a href="#" class="text-primary text-decoration-none fs-14 fw-semibold">Find Out More
+                </a>
+                <i class="bi bi-arrow-right ps-2 text-primary"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="service-content d-flex px-5 py-4 rounded-4 c-2">
+              <img src="./assets/images/service/planning-job.png" alt="" class="py-3 w-25" />
+              <div class="service-info ps-4 py-3">
+                <h3 class="fw-semibold">Planning a Job?</h3>
+                <p class="fs-14 text-secondary">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam laoreet rutrum quam, id faucibus erat interdum a.
+                  Curabitur eget tortor a nulla interdum semper.
+                </p>
+                <a href="#" class="text-primary text-decoration-none fs-14 fw-semibold">Find Out More
+                </a>
+                <i class="bi bi-arrow-right ps-2 text-primary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Job Places -->
+    <section class="Places py-100">
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <h1 class="pb-1 fw-semibold">Jobs By Location</h1>
+          <p class="text-secondary fs-5 fw-semibold">
+            Find your favourite jobs and get the benefits of yourself
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <div class="place-card bg-light border rounded-4 p-2">
+              <div class="place-img mb-2 overflow-hidden rounded-4">
+                <img src="./assets/images/Places/place-1.png" alt="" class="rounded-4 overflow-hidden" />
+              </div>
+              <h4 class="p-2 pb-0">Paris,france</h4>
+              <div class="place-content text-secondary d-flex justify-content-between ps-2 fs-14 pb-2">
+                <span>5 Vacancy</span>
+                <span>120 Companies</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="place-card bg-light border rounded-4 p-2">
+              <div class="place-img mb-2 overflow-hidden rounded-4">
+                <img src="./assets/images/Places/place-2.png" alt="" class="rounded-4 w-100 overflow-hidden" />
+              </div>
+              <h4 class="p-2 pb-0">London, England</h4>
+              <div class="place-content text-secondary d-flex justify-content-between ps-2 fs-14 pb-2">
+                <span>7 Vacancy</span>
+                <span>68 Companies</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="place-card bg-light border rounded-4 p-2">
+              <div class="place-img mb-2 overflow-hidden rounded-4">
+                <img src="./assets/images/Places/place-3.png" alt="" class="w-100 rounded-4 overflow-hidden" />
+              </div>
+              <h4 class="p-2 pb-0">New York, USA</h4>
+              <div class="place-content text-secondary d-flex justify-content-between ps-2 fs-14 pb-2">
+                <span>9 Vacancy</span>
+                <span>880 Companies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4">
+            <div class="place-card bg-light border rounded-4 p-2">
+              <div class="place-img mb-2 overflow-hidden rounded-4">
+                <img src="./assets/images/Places/place-4.png" alt="" class="rounded-4 w-100 overflow-hidden" />
+              </div>
+              <h4 class="p-2 pb-0">Amsterdam, Holland</h4>
+              <div class="place-content text-secondary d-flex justify-content-between ps-2 fs-14 pb-2">
+                <span>16 Vacancy</span>
+                <span>86 Companies</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="place-card bg-light border rounded-4 p-2">
+              <div class="place-img mb-2 overflow-hidden rounded-4">
+                <img src="./assets/images/Places/place-5.png" alt="" class="rounded-4 w-100 overflow-hidden" />
+              </div>
+              <h4 class="p-2 pb-0">Copenhagen, Denmark</h4>
+              <div class="place-content text-secondary d-flex justify-content-between ps-2 fs-14 pb-2">
+                <span>39 Vacancy</span>
+                <span>186 Companies</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="place-card bg-light border rounded-4 p-2">
+              <div class="place-img mb-2 overflow-hidden rounded-4">
+                <img src="./assets/images/Places/place-6.png" alt="" class="rounded-4 overflow-hidden" />
+              </div>
+              <h4 class="p-2 pb-0">Berlin, Germany</h4>
+              <div class="place-content text-secondary d-flex justify-content-between ps-2 fs-14 pb-2">
+                <span>15 Vacancy</span>
+                <span>625 Companies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog -->
+    <section class="blog">
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <h1 class="pb-1 fw-semibold">News and Blog</h1>
+          <p class="text-secondary fs-5 fw-semibold">
+            Get the latest news, updates and tips
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="blog-card bg-light border rounded-4 p-1">
+              <div class="blog-img rounded-4">
+                <img src="./assets/images/Blog/img-news1.png" alt="" class="rounded-4 pt-1 d-block mx-auto" />
+              </div>
+              <div class="blog-content p-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">new</a>
+                <h5 class="py-3">
+                  21 Job Interview Tips: How To Make a Great Impression
+                </h5>
+                <p class="text-secondary fs-14 fw-semibold">
+                  Our mission is to create the world rsquo;s most sustainable
+                  healthcare company by creating high-quality healthcare
+                  products in iconic, sustainable packaging.
+                </p>
+              </div>
+              <div class="blog-bottom d-flex p-2 justify-content-between align-items-center">
+                <div class="blog-img d-flex">
+                  <img src="./assets/images/Blog/user1.png" alt="" class="" />
+                  <div class="blog-info ps-3">
+                    <span class="fs-14 fw-bold">Sarah Harding</span>
+                    <p class="fs-12 text-secondary p-0 m-0">06 September</p>
+                  </div>
+                </div>
+                <span class="fs-13 text-secondary fw-semibold justify-content-end">8 mins to read</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="blog-card bg-light border rounded-4 p-1">
+              <div class="blog-img rounded-4">
+                <img src="./assets/images/Blog/img-news2.png" alt="" class="rounded-4 d-block mx-auto pt-1" />
+              </div>
+              <div class="blog-content p-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">Events</a>
+                <h5 class="py-3">
+                  39 Strengths and Weaknesses To Discuss in a Job Interview
+                </h5>
+                <p class="text-secondary fs-14 fw-semibold">
+                  Our mission is to create the world rsquo;s most sustainable
+                  healthcare company by creating high-quality healthcare
+                  products in iconic, sustainable packaging.
+                </p>
+              </div>
+              <div class="blog-bottom d-flex p-2 justify-content-between align-items-center">
+                <div class="blog-img d-flex">
+                  <img src="./assets/images/Blog/user2.png" alt="" class="" />
+                  <div class="blog-info ps-3">
+                    <span class="fs-14 fw-bold">Steve Jobs</span>
+                    <p class="fs-12 text-secondary p-0 m-0">06 September</p>
+                  </div>
+                </div>
+                <span class="fs-13 text-secondary fw-semibold justify-content-end">6 mins to read</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="blog-card bg-light border rounded-4 p-1">
+              <div class="blog-img rounded-4">
+                <img src="./assets/images/Blog/img-news3.png" alt="" class="rounded-4 pt-1 d-block mx-auto" />
+              </div>
+              <div class="blog-content p-2">
+                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">News</a>
+                <h5 class="py-3">
+                  Interview Question: Why Dont You Have a Degree?
+                </h5>
+                <p class="text-secondary fs-14 fw-semibold">
+                  Our mission is to create the world rsquo;s most sustainable
+                  healthcare company by creating high-quality healthcare
+                  products in iconic, sustainable packaging.
+                </p>
+              </div>
+              <div class="blog-bottom d-flex p-2 justify-content-between align-items-center">
+                <div class="blog-img d-flex">
+                  <img src="./assets/images/Blog/user3.png" alt="" class="" />
+                  <div class="blog-info ps-3">
+                    <span class="fs-14 fw-bold">William Kend</span>
+                    <p class="fs-12 text-secondary p-0 m-0">06 September</p>
+                  </div>
+                </div>
+                <span class="fs-13 text-secondary fw-semibold justify-content-end">9 mins to read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-btn d-flex justify-content-center pt-5">
+          <a href="#" class="btn load-btn text-white px-4 py-3">
+            <i class="bi bi-arrow-clockwise pe-2"></i>
+            Load More Posts
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- NewsLatter -->
+    <section class="news-latter py-100">
+      <div class="container">
+        <div class="row">
+          <div class="nl-bg rounded-4 p-5 background-image-cover d-flex">
+            <div class="col-3">
+              <img src="./assets/images/News-latter/newsletter-left.png" alt="" />
+            </div>
+            <div class="col-6 text-center">
+              <h2 class="text-white fw-bold lh-base pb-2">
+                New Things Will Always <br />
+                Update Regularly
+              </h2>
+              <div class="form-control position-relative text-start d-flex border-none">
+                <i class="bi bi-envelope-fill position-absolute fs-2 px-2 pt-1 text-secondary"></i>
+                <input type="email" class="form-control py-3 ps-5 w-100" placeholder="Enter Your Email Here..." />
+                <a href="#" class="btn btn-primary d-flex align-items-center py-2"><i
+                    class="bi bi-check-circle pe-2"></i> Subscribe</a>
+              </div>
+            </div>
+            <div class="col-3 text-end">
+              <img src="./assets/images/News-latter/newsletter-right.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="#top" class="scroll-up bg-primary position-fixed rounded-circle bottom-0 mb-5 me-4 z-1 text-center">
+      <i class="bi bi-arrow-up text-white fs-4"></i>
+    </a>
+    <!-- Footer -->
+    <section class="Footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="./assets/images/Banner/logo-main.png" alt="" class="w-75 pb-2" />
+            <p class="text-secondary fs-12 pt-3 fw-semibold pb-1">
+              JobLinker is the heart of the design community and the best
+              resource to discover and connect with designers and jobs
+              worldwide.
+            </p>
+            <div class="footer-social d-flex gap-2 mb-3">
+              <a href="#">
+                <img src="./assets/images/footer/facebook.2e17f4c2.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/images/footer/twitter.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/images/footer/linkedin.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col pt-4">
+            <h6 class="fw-semibold">Resources</h6>
+            <div class="fs-14">
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">About us</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Our Team</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Products</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Contact</a>
+              </li>
+            </div>
+          </div>
+          <div class="col pt-4">
+            <h6 class="fw-semibold">Community</h6>
+            <div class="fs-14">
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Feature</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Pricing</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Credit</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">FAQ</a>
+              </li>
+            </div>
+          </div>
+          <div class="col pt-4">
+            <h6 class="fw-semibold">Quick Links</h6>
+            <div class="fs-14">
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">IOS</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Android</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Microsoft</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Desktop</a>
+              </li>
+            </div>
+          </div>
+          <div class="col pt-4">
+            <h6 class="fw-semibold">More</h6>
+            <div class="fs-14">
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Privacy</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Help</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Terms</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">FAQ</a>
+              </li>
+            </div>
+          </div>
+          <div class="col-3 pt-4">
+            <h6>Download App</h6>
+            <p class="text-secondary fs-12 pt-3 fw-semibold">
+              Download our Apps and get extra 15% Discount on your first
+              Order…!
+            </p>
+            <div class="footer-store d-flex gap-2">
+              <a href="#">
+                <img src="./assets/images/footer/app-store.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/images/footer/android.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer-bottom py-4 border-top border-dark mt-4 d-flex">
             <div class="col-6">
-              <div class="search-img position-relative">
-                <img
-                  src="./assets/images/Search-job/img1.png"
-                  alt=""
-                  class="position-relative z-2"
-                />
-                <img
-                  src="./assets/images/Search-job/img-chart.png"
-                  alt=""
-                  class="search-1 position-absolute z-1"
-                />
-                <img
-                  src="./assets/images/Search-job/controlcard.png"
-                  alt=""
-                  class="search-2 position-absolute"
-                />
+              <span class="fs-13 text-secondary">Copyright © 2022. JobBox all right reserved</span>
+            </div>
+            <div class="col-6">
+              <div class="footer-social d-flex gap-3 fs-13 justify-content-end">
+                <a href="#" class="text-decoration-none text-secondary">Privacy Policy</a>
+                <a href="#" class="text-decoration-none text-secondary">Terms & Conditions</a>
+                <a href="#" class="text-decoration-none text-secondary">Security</a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer></footer>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+      </div>
+    </section>
+  </footer>
+  <!-- Bs Js file -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
