@@ -101,121 +101,871 @@
             <section class="slider">
                 <div class="single-slide bg-black overflow-hidden  W-100" >
                     <img src="./assets/images/find job/bg-img.jpg" class="d-block opacity-75 h-100  W-100" alt="bg-img"/>
-                </div>
-                <div class="container-fluid ">
-                    <div class="row ">
-                        <div class="col-8 mx-auto">
-                            <form class="d-flex my-3" role="search">
-                                <input class="form-control me-2 p-3" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="find-job">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="filter-heading py-4 pe-4 d-flex align-items-center">
-                                <i class="bi bi-filter fs-2 pe-3"></i>
-                                <h3 class="mb-0">Filter Jobs</h3>
-                                
-                            </div>
-                            <form class="ps-3">
-                                <div class="mb-3">
-                                    <label for="disabledSelect" class="form-label h4 pb-2">Job Category</label>
-                                    <select id="disabledSelect" class="form-select mb-3">
-                                      <option>Category-1</option>
-                                      <option>Category-2</option>
-                                      <option>Category-3</option>
-                                      <option>Category-4</option>
-                                      <option>Category-5</option>
-                                    </select>
-                                    <label class="form-check-label h4 mb-2" for="flexCheckChecked">Job Type</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            full time
-                                        </label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            part time
-                                        </label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            work from home
-                                        </label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            internship
-                                        </label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            fresher
-                                        </label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            freelance
-                                        </label>
-                                    </div>
-                                    <label for="disabledSelect" class="form-label h4 my-3">Job Location</label>
-                                    <select id="disabledSelect" class="form-select mb-3">
-                                    <option>Category-1</option>
-                                    <option>Category-2</option>
-                                    <option>Category-3</option>
-                                    <option>Category-4</option>
-                                    <option>Category-5</option>
-                                    </select>
-                                    <label class="form-check-label h4" for="flexCheckChecked">Posted Within</label>
-                                    <div class="form-check mb-3">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            any time
-                                        </label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            today
-                                        </label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            last 3 days
-                                        </label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            last 7 days
-                                        </label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            last 15 days
-                                        </label>
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            last 30 days
-                                        </label>
-                                    </div>
-                                    <label for="customRange1" class="form-label h4">Filter Jobs</label>
-                                    <input type="range" class="form-range" id="customRange1">
-                                    <span class="h5">0 - 1000</span>
-                                  </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
-            </section>
-        </main>
-        <footer></footer>
-        <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joblinker</title>
+    <link rel="shortcut icon" href="" type="">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light z-1 w-100">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar bg-body-tertiary p-3 rounded-3 justify-content-center">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown">Find Jobs</a>
+                            <ul class="dropdown-menu p-1">
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Work From Home</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Part Time Job</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Freshers Job</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Full Time Job</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Job For Women</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu p-1">
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Resume Writing</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Recruitment Services</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Career Counselling</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Freelancing</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Internship</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a class="btn" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Login</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="container">
+                <div class="banner-heading text-center">
+                    <h2 class="fw-bold">
+                        <span class="text-primary">22 Jobs</span>
+                        Available Now
+                    </h2>
+                    <p class="fw-medium text-secondary fs-14">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero repellendus magni,
+                        <br>
+                        quidem, voluptates, quas voluptatem quae quos quia.
+                    </p>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-2 px-0">
+                        <div class="banner-img d-flex justify-content-between pe-2">
+                            <img src="./assets/images/banner-img-1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="form-find bg-light text-start mt-40 p-4 rounded-3 shadow Position-absolute ">
+                            <form class="w-100">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="search-box w-100">
+                                            <select class="form-select mr-10 select-active w-100">
+                                                <option value="0">Industry</option>
+                                                <option value="1">Software</option>
+                                                <option value="2">Finance</option>
+                                                <option value="3">Recruting</option>
+                                                <option value="4">Management</option>
+                                                <option value="5">Development</option>
+                                                <option value="6">Advertising</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="box-industry">
+                                            <select class="form-select input-location mr-10 select-active">
+                                                <option value="true">Location</option>
+                                                <option value="AR">Argentina</option>
+                                                <option value="CA">Canada</option>
+                                                <option value="AS">Australia</option>
+                                                <option value="IN">India</option>
+                                                <option value="IT">Italy</option>
+                                                <option value="JP">Japan</option>
+                                                <option value="JR">Jersey</option>
+                                                <option value="JD">Jordan</option>
+                                                <option value="LD">Londan</option>
+                                                <option value="AM">America</option>
+                                                <option value="NZ">New Zealand</option>
+                                                <option value="NO">Norway</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <input class="search mr-10 form-control" type="text" placeholder="search">
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-primary btn-find font-sm w-100">
+                                            <i class="bi bi-search me-2"></i>
+                                            <span>Search</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="banner-img d-flex justify-content-between ps-2">
+                            <img src="./assets/images/banner-img-2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="find-job">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="filter-heading py-4 pe-4 d-flex align-items-center">
+                            <i class="bi bi-filter fs-2 pe-3"></i>
+                            <h3 class="mb-0">Filter Jobs</h3>
+                        </div>
+                        <form class="ps-3">
+
+                            <label for="disabledSelect" class="form-label h4 pb-2">Industry</label>
+                            <select id="disabledSelect" class="form-select mb-3">
+                                <option>Web Development</option>
+                                <option>Software Development</option>
+                                <option>Software Engineer</option>
+                                <option>Full-Stack Developer</option>
+                                <option>Accountant</option>
+                                <option>HR Manager</option>
+                                <option>Graphic Designer</option>
+                                <option>UI/UX Designer</option>
+                                <option>Frontend Developer</option>
+                                <option>Civil Engineer</option>
+                                <option>IT Manager</option>
+                                <option>Data Scientist</option>
+                                <option>Marketing Assistant</option>
+                            </select>
+                            <label class="form-check-label h4 mb-2" for="flexCheckChecked">Job Type</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    full time
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    part time
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    work from home
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    internship
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    freelance
+                                </label>
+                            </div>
+                            <label for="disabledSelect" class="form-label h4 my-3">Job Location</label>
+                            <select id="disabledSelect" class="form-select mb-3">
+                                <option>Mumbai</option>
+                                <option>Surat</option>
+                                <option>Ahmedabad</option>
+                                <option>Hyderabad</option>
+                                <option>Bangalore</option>
+                                <option>Jaipur</option>
+                                <option>Chennai</option>
+                            </select>
+                            <label for="disabledSelect" class="form-label h4 my-3">Experience Level</label>
+                            <select id="disabledSelect" class="form-select mb-3">
+                                <option>Entry level</option>
+                                <option>Mid-level</option>
+                                <option>Associate</option>
+                                <option>Director</option>
+                                <option>Executive</option>
+                            </select>
+                            <label class="form-check-label h4 my-3" for="flexCheckChecked">Popular Keyword</label>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Software
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Developer
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Web
+                                </label>
+                            </div>
+                            <label class="form-check-label h4" for="flexCheckChecked">Position</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Senior
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Junior
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Freshers
+                                </label>
+                            </div>
+                            <label class="form-check-label h4 my-3" for="flexCheckChecked">Posted Within</label>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    any time
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    today
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    3 days
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    7 days
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    15 days
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    30 days
+                                </label>
+                            </div>
+                            <label class="form-check-label h4" for="flexCheckChecked">Salary Range</label>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">0-5000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">5000-10000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">10000-20000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">20000-30000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">30000-40000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">40000-50000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">50000-60000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">60000-70000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">70000-80000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">80000-90000</label>
+                                <br>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">90000-100000</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-page col-9 border-box">
+                        <div class="row">
+                            <div class="Contact-heading d-flex justify-content-between align-items-center  py-4 mb-3">
+                                <span class="text-secondary fw-semibold">
+                                    showing
+                                    <span class="fw-bold">41-60</span>
+                                    of
+                                    <span class="fw-bold">100</span>
+                                    jobs
+                                </span>
+                                <div class="d-flex">
+                                    <div
+                                        class="dropdown dropdown-sort align-items-center d-flex justify-content-center border border-secondary-subtle me-2 rounded-3">
+
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            data-bs-display="static">
+                                            <span class="text-secondary fs-14 pe-1">
+                                                Show:
+                                            </span>
+                                            <span class="fs-14">10</span>
+                                            <i class="fi-rr-angle-small-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end p-2">
+                                            <li>
+                                                <a class="dropdown-item" href="#">10</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">20</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">30</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">40</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">50</a>
+                                            </li>
+                                    </div>
+                                    <div
+                                        class="border-box mr-10 d-flex justify-content-center align-items-center border border-secondary-subtle me-2 rounded-3">
+
+                                        <div class="dropdown dropdown-sort">
+                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                data-bs-display="static">
+                                                <span class="text-secondary fs-14">
+                                                    Sort By:
+                                                </span>
+                                                <span class="fs-14">Newest Post</span>
+                                                <i class="fi-rr-angle-small-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Newest Post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Oldest Post</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Rating Post</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="box-type d-flex justify-content-center align-items-center border-box mr-10 border border-secondary-subtle me-2 rounded-3">
+                                        <i class="bi bi-list px-2 py-1 text-dark fs-6"></i>
+                                    </div>
+                                    <div
+                                        class="box-type d-flex justify-content-center align-items-center border-box mr-10 ">
+                                        <i class="bi bi-grid bg-primary text-white px-2 py-1 rounded-3"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="job-card bg-light p-3 rounded-2">
+                                    <div class="job-img d-flex ps-2 pb-2">
+                                        <img src="./assets/images/job/brand-1.png" alt="" class="" />
+                                        <div class="img-content">
+                                            <h5 class="mb-0 ps-3">Linkedin</h5>
+                                            <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                                                <i class="bi bi-geo-alt-fill pe-1"></i>
+                                                New York,US
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="job-description">
+                                        <h5 class="pt-3 fw-semibold mb-0 pb-1">
+                                            UI / UX Designer fulltime
+                                        </h5>
+                                    </div>
+                                    <div class="pt-2 d-flex gap-4 ps-1">
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-suitcase-lg pe-2"></i>
+                                            Fulltime
+                                        </span>
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-clock-history pe-2"></i>
+                                            Minutes ago
+                                        </span>
+                                    </div>
+                                    <div class="job-description pt-3 pb-2">
+                                    </div>
+                                    <div class="job-skills d-flex gap-2 pb-2">
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Adobe</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Figma</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Photoshop</a>
+                                    </div>
+                                    <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                                        <div class="col-7 d-flex align-items-center">
+                                            <span class="fs-4 fw-bold text-primary">&500</span>
+                                            <span class="pt-2">/Hour</span>
+                                        </div>
+                                        <div class="col-five">
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="job-card bg-light p-3 rounded-2 pt-5">
+                                    <div class="job-img d-flex ps-2 pb-2">
+                                        <img src="./assets/images/job/brand-2.png" alt="" class="" />
+                                        <div class="img-content">
+                                            <h5 class="mb-0 ps-3">Adobe</h5>
+                                            <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                                                <i class="bi bi-geo-alt-fill pe-1"></i>
+                                                New York,US
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="job-description">
+                                        <h5 class="pt-3 fw-semibold mb-0 pb-1">
+                                            Full Stack Engineer
+                                        </h5>
+                                    </div>
+                                    <div class="pt-2 d-flex gap-4 ps-1">
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-suitcase-lg pe-2"></i>
+                                            Fulltime
+                                        </span>
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-clock-history pe-2"></i>
+                                            5 Minutes ago
+                                        </span>
+                                    </div>
+                                    <div class="job-description pt-3 pb-2">
+                                    </div>
+                                    <div class="job-skills d-flex gap-2 pb-2">
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">React</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">NodeJS</a>
+                                    </div>
+                                    <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                                        <div class="col-7 d-flex align-items-center">
+                                            <span class="fs-4 fw-bold text-primary">&800</span>
+                                            <span class="pt-2">/Hour</span>
+                                        </div>
+                                        <div class="col-five">
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="job-card bg-light p-3 rounded-2 pt-5">
+                                    <div class="job-img d-flex ps-2 pb-2">
+                                        <img src="./assets/images/job/brand-3.png" alt="" class="" />
+                                        <div class="img-content">
+                                            <h5 class="mb-0 ps-3">Bing Search</h5>
+                                            <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                                                <i class="bi bi-geo-alt-fill pe-1"></i>
+                                                New York,US
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="job-description">
+                                        <h5 class="pt-3 fw-semibold mb-0 pb-1">
+                                            Java Software Engineer
+                                        </h5>
+                                    </div>
+                                    <div class="pt-2 d-flex gap-4 ps-1">
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-suitcase-lg pe-2"></i>
+                                            Fulltime
+                                        </span>
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-clock-history pe-2"></i>
+                                            6 Minutes ago
+                                        </span>
+                                    </div>
+                                    <div class="job-description pt-3 pb-2">
+                                    </div>
+                                    <div class="job-skills d-flex gap-2 pb-2">
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Python</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">AWS</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Photoshop</a>
+                                    </div>
+                                    <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                                        <div class="col-7 d-flex align-items-center">
+                                            <span class="fs-4 fw-bold text-primary">&250</span>
+                                            <span class="pt-2">/Hour</span>
+                                        </div>
+                                        <div class="col-five">
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="job-card bg-light p-3 rounded-2 pt-5">
+                                    <div class="job-img d-flex ps-2 pb-2">
+                                        <img src="./assets/images/job/brand-4.png" alt="" class="" />
+                                        <div class="img-content">
+                                            <h5 class="mb-0 ps-3">Dailymotion</h5>
+                                            <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                                                <i class="bi bi-geo-alt-fill pe-1"></i>
+                                                New York,US
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="job-description">
+                                        <h5 class="pt-3 fw-semibold mb-0 pb-1">Frontend Developer</h5>
+                                    </div>
+                                    <div class="pt-2 d-flex gap-4 ps-1">
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-suitcase-lg pe-2"></i>
+                                            Fulltime
+                                        </span>
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-clock-history pe-2"></i>
+                                            6 Minutes ago
+                                        </span>
+                                    </div>
+                                    <div class="job-description pt-3 pb-2">
+                                    </div>
+                                    <div class="job-skills d-flex gap-2 pb-2">
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">TypeScript</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Java</a>
+                                    </div>
+                                    <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                                        <div class="col-7 d-flex align-items-center">
+                                            <span class="fs-4 fw-bold text-primary">&250</span>
+                                            <span class="pt-2">/Hour</span>
+                                        </div>
+                                        <div class="col-five">
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="job-card bg-light p-3 rounded-2">
+                                    <div class="job-img d-flex ps-2 pb-2">
+                                        <img src="./assets/images/job/brand-5.png" alt="" class="" />
+                                        <div class="img-content">
+                                            <h5 class="mb-0 ps-3">Linkedin</h5>
+                                            <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                                                <i class="bi bi-geo-alt-fill pe-1"></i>
+                                                New York,US
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="job-description">
+                                        <h5 class="pt-3 fw-semibold mb-0 pb-1">
+                                            React Native Web Developer
+                                        </h5>
+                                    </div>
+                                    <div class="pt-2 d-flex gap-4 ps-1">
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-suitcase-lg pe-2"></i>
+                                            Fulltime
+                                        </span>
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-clock-history pe-2"></i>
+                                            4 Minutes ago
+                                        </span>
+                                    </div>
+                                    <div class="job-description pt-3 pb-2">
+                                    </div>
+                                    <div class="job-skills d-flex gap-2 pb-2">
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Angular</a>
+                                    </div>
+                                    <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                                        <div class="col-7 d-flex align-items-center">
+                                            <span class="fs-4 fw-bold text-primary">&500</span>
+                                            <span class="pt-2">/Hour</span>
+                                        </div>
+                                        <div class="col-five">
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="job-card bg-light p-3 rounded-2 pt-5">
+                                    <div class="job-img d-flex ps-2 pb-2">
+                                        <img src="./assets/images/job/brand-6.png" alt="" class="" />
+                                        <div class="img-content">
+                                            <h5 class="mb-0 ps-3">Quora JSC</h5>
+                                            <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                                                <i class="bi bi-geo-alt-fill pe-1"></i>
+                                                New York,US
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="job-description">
+                                        <h5 class="pt-3 fw-semibold mb-0 pb-1">
+                                            Senior System Engineer
+                                        </h5>
+                                    </div>
+                                    <div class="pt-2 d-flex gap-4 ps-1">
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-suitcase-lg pe-2"></i>
+                                            Fulltime
+                                        </span>
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-clock-history pe-2"></i>
+                                            5 Minutes ago
+                                        </span>
+                                    </div>
+                                    <div class="job-description pt-3 pb-2">
+                                    </div>
+                                    <div class="job-skills d-flex gap-2 pb-2">
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">PHP</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Android</a>
+                                    </div>
+                                    <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                                        <div class="col-7 d-flex align-items-center">
+                                            <span class="fs-4 fw-bold text-primary">&800</span>
+                                            <span class="pt-2">/Hour</span>
+                                        </div>
+                                        <div class="col-five">
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="job-card bg-light p-3 rounded-2 pt-5">
+                                    <div class="job-img d-flex ps-2 pb-2">
+                                        <img src="./assets/images/job/brand-7.png" alt="" class="" />
+                                        <div class="img-content">
+                                            <h5 class="mb-0 ps-3">Nintendo</h5>
+                                            <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                                                <i class="bi bi-geo-alt-fill pe-1"></i>
+                                                New York,US
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="job-description">
+                                        <h5 class="pt-3 fw-semibold mb-0 pb-1">Products Manager</h5>
+                                    </div>
+                                    <div class="pt-2 d-flex gap-4 ps-1">
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-suitcase-lg pe-2"></i>
+                                            Fulltime
+                                        </span>
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-clock-history pe-2"></i>
+                                            6 Minutes ago
+                                        </span>
+                                    </div>
+                                    <div class="job-description pt-3 pb-2">
+                                    </div>
+                                    <div class="job-skills d-flex gap-2 pb-2">
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">ASP.Net</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Figma</a>
+                                    </div>
+                                    <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                                        <div class="col-7 d-flex align-items-center">
+                                            <span class="fs-4 fw-bold text-primary">&250</span>
+                                            <span class="pt-2">/Hour</span>
+                                        </div>
+                                        <div class="col-five">
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="job-card bg-light p-3 rounded-2 pt-5">
+                                    <div class="job-img d-flex ps-2 pb-2">
+                                        <img src="./assets/images/job/brand-8.png" alt="" class="" />
+                                        <div class="img-content">
+                                            <h5 class="mb-0 ps-3">Linkedin</h5>
+                                            <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                                                <i class="bi bi-geo-alt-fill pe-1"></i>
+                                                New York,US
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="job-description">
+                                        <h5 class="pt-3 fw-semibold mb-0 pb-1">
+                                            Lead Quality Control QA
+                                        </h5>
+                                    </div>
+                                    <div class="pt-2 d-flex gap-4 ps-1">
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-suitcase-lg pe-2"></i>
+                                            Fulltime
+                                        </span>
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-clock-history pe-2"></i>
+                                            6 Minutes ago
+                                        </span>
+                                    </div>
+                                    <div class="job-description pt-3 pb-2">
+                                    </div>
+                                    <div class="job-skills d-flex gap-2 pb-2">
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">IOS</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Laravel</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Golang</a>
+                                    </div>
+                                    <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                                        <div class="col-7 d-flex align-items-center">
+                                            <span class="fs-4 fw-bold text-primary">&250</span>
+                                            <span class="pt-2">/Hour</span>
+                                        </div>
+                                        <div class="col-five">
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="job-card bg-light p-3 rounded-2 pt-5">
+                                    <div class="job-img d-flex ps-2 pb-2">
+                                        <img src="./assets/images/job/brand-8.png" alt="" class="" />
+                                        <div class="img-content">
+                                            <h5 class="mb-0 ps-3">Linkedin</h5>
+                                            <p class="mb-0 ps-3 fs-13 text-secondary pt-1">
+                                                <i class="bi bi-geo-alt-fill pe-1"></i>
+                                                New York,US
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="job-description">
+                                        <h5 class="pt-3 fw-semibold mb-0 pb-1">
+                                            Backend Developer
+                                        </h5>
+                                    </div>
+                                    <div class="pt-2 d-flex gap-4 ps-1">
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-suitcase-lg pe-2"></i>
+                                            Fulltime
+                                        </span>
+                                        <span class="fs-14 text-secondary">
+                                            <i class="bi bi-clock-history pe-2"></i>
+                                            6 Minutes ago
+                                        </span>
+                                    </div>
+                                    <div class="job-description pt-3 pb-2">
+                                    </div>
+                                    <div class="job-skills d-flex gap-2 pb-2">
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">Python</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">ExpressJS</a>
+                                        <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3">MongoDB</a>
+                                    </div>
+                                    <div class="job-salary d-flex justify-content-between py-4 align-items-center pt-4">
+                                        <div class="col-7 d-flex align-items-center">
+                                            <span class="fs-4 fw-bold text-primary">&550</span>
+                                            <span class="pt-2">/Hour</span>
+                                        </div>
+                                        <div class="col-five">
+                                            <a href="#" class="btn bg-body-secondary py-2 fs-14 px-3 text-primary">Apply
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Previous</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
