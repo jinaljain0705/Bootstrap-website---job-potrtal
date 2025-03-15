@@ -262,6 +262,21 @@ body {
 .form-find{
   top: 20% !important;
 }
+/* service page */
+.banner{
+  background-image: url(../images/service\ banner.jpg);
+  background-size: cover !important;
+  background-position: center top;
+  position: relative;
+  align-self: center;
+  padding: 170px 0;
+}
+.banner ::after .banner::before{
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);   
+  z-index: -1;
+}
 /* contact Page */
 .contact-banner{
     background-image: url("../images/Contact/banner/banner.png");
