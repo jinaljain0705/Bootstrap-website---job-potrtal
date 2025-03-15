@@ -4,7 +4,6 @@
     --primary-color:#3D8D7A;
     --secondary-color:#B3D8A8;
 }
-
 h1,
 h2,
 h3,
@@ -47,7 +46,6 @@ h6 {
 .banner-2 .carousel-caption{
     top: 20%;
 }
-
 .join-btn{
     background: var(--primary-color);
 }
@@ -58,6 +56,7 @@ h6 {
     padding-top: 35px !important;
     margin-bottom: 30px;
 }
+
 /* Search Job */
 .search-1{
     left: -20%;
@@ -80,18 +79,24 @@ h6 {
 .form-find{
     top: 20% !important;
 }
+
 /* service page */
-.banner{
+.service-banner{
     background-image: url(../images/service\ banner.jpg);
     background-size: cover !important;
     background-position: center top;
     position: relative;
     align-self: center;
     padding: 170px 0;
+    z-index: 1;
 }
-.banner ::after .banner::before{
+.service-banner::before{
     content: '';
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);   
+    background-color: rgb(0, 0, 0,0.5);   
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     z-index: -1;
 }
