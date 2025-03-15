@@ -36,12 +36,24 @@ body{
 img{
   display: block;
 }
+
 /* Navabar */
+
 .navbar-collapse {
   flex-grow: 0;
 }
 .dropdown-menu {
   border: 0;
+}
+.search-btn{
+  height: 40px;
+  width: 40px;
+  top: 0;
+  right: 0px;
+}
+.search-btn:hover ,.login-btn:hover{
+  background-color: #05264e;
+  border: none;
 }
 /* Banner */
 .slider,
@@ -291,4 +303,24 @@ body {
 .cta-btn .btn-1:hover , .cta-btn .btn-2:hover{
   background-color: #05264e !important;
   color: white;
+}
+/* Login Page */
+.login-form form{
+  width: 35%;
+}
+.login-form .form-control ,.login-form .submit{
+  padding: 11px 15px 13px;
+}
+.login-shape-1{
+  right: 15%;
+  top: 50%;
+  animation: 2s linear 0s infinite alternate none running hero-thumb-animation;
+}
+@keyframes hero-thumb-animation{
+  0%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }

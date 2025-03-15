@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joblinker</title>
+  <link rel="shortcut icon" href="./assets/images/Banner/favicon.png" type="image/x-icon" />
+  <!-- Fonts -->
+  <link rel="stylesheet" href="./assets/css/fonts.css" />
+  <!-- Bs-Icons  -->
+  <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
+  <!-- Bs-File -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <!-- Style -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body >
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 z-3 w-100 ">
+          <div class="container-fluid">
+            <a class="nav-logo w-25 ps-5" href="#">
+              <img src="./assets/images/Banner/Logo-main.png" alt="" class="w-75" />
+            </a>
+            <nav class="py-3 rounded-3 ">
+              <form class="d-flex w-100  position-relative" role="search">
+                <input class="form-control me-2 py-2 w-100 rounded-5 px-5 text-center shadow-sm" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-primary rounded-5 position-absolute search-btn shadow-sm " type="submit">
+                  <i class="bi bi-search fs-14"></i>
+                </button>
+              </form>
+            </nav>
+            <div class="collapse navbar-collapse d-flex" id="navbarNav">
+              <ul class="navbar-nav w-100 d-flex gap-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" data-bs-toggle="dropdown">Find Jobs</a>
+                  <ul class="dropdown-menu p-1">
+                    <li>
+                      <a class="dropdown-item p-2" href="./findjob.html">Work From Home</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-2" href="./findjob.html">Part Time Job</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-2" href="./findjob.html">Freshers Job</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-2" href="./findjob.html">Full Time Job</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-2" href="./findjob.html">Job For Women</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" data-bs-toggle="dropdown">Services</a>
+                  <ul class="dropdown-menu p-1">
+                    <li>
+                      <a class="dropdown-item p-2" href="#">Resume Writing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-2" href="#">Recruitment Services</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-2" href="#">Career Counselling</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-2" href="#">Freelancing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-2" href="#">Internship</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link btn bg-primary text-white px-4 mx-2 login-btn" href="./login.html">
+                    <i class="bi bi-person-circle pe-2"></i>Login</a>
+                </li>
+              </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
+  <main>
+    <!-- Member register -->
+     <section class="login py-100">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="login-form-heading text-center">
+              <span class="text-primary">Register</span>
+              <h2 class="fw-semibold pt-2 ">Start For Free Today</h2>
+              <span class="text-secondary">Access to all features. No credit card required</span>
+            </div>
+            <div class="login-form d-flex justify-content-center position-relative">
+              <form class=" mt-5">
+                <div class="mb-4">
+                    <label for="Fullname" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="Fullname"  placeholder="Steven Job">
+                  </div>
+                <div class="mb-4">
+                  <label for="Email1" class="form-label">Username or Email address</label>
+                  <input type="email" class="form-control" id="Email1"  placeholder="Stevenjob@gmail.com">
+                </div>
+                <div class="mb-4">
+                    <label for="Username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="Username"  placeholder="Steven">
+                  </div>
+                <div class="mb-4">
+                  <label for="Password1" class="form-label">Password</label>
+                  <input type="password" class="form-control border-secondary-subtle" id="Password1" placeholder="********">
+                </div>
+                <div class="mb-4">
+                    <label for="re-password" class="form-label">Re-Password</label>
+                    <input type="password" class="form-control border-secondary-subtle" id="re-password" placeholder="********">
+                  </div>
+                
+                <div class="mb-4 form-check d-flex justify-content-between">
+                  <div class="remeber">
+                    <input type="checkbox" class="form-check-input" id="Check1">
+                    <label class="form-check-label" for="Check1">Agree Our Terms And Policy</label>
+                  </div>
+                  <div class="forget">
+                    <a href="#" class="text-secondary text-decoration-none">Learn More</a>
+                  </div>
+                  
+                </div>
+                <button type="submit" class="btn btn-primary w-100 submit">Submit/Register</button>
+                <div class="text-center py-3">
+                  <span>Already Have an Account? <a href="./login.html" class="text-dark text-decoration-none fw-bold">LogIn</a></span>
+                </div>
+              </form>
+            </div>
+            <div class="login-shape-1 position-absolute ">
+              <img src="./assets/images/login/img-1.svg" alt="">
+            </div>
+            <div class="login-shape-2">
+              <img src="./assets/images/login/img-2.svg" alt="">
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+     </section>
+  </main>
+  <footer>
+    <a href="#top" class="scroll-up bg-primary position-fixed rounded-circle bottom-0 mb-5 me-4 z-1 text-center">
+      <i class="bi bi-arrow-up text-white fs-4"></i>
+    </a>
+    <!-- Footer -->
+    <section class="Footer bg-light pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="./assets/images/Banner/logo-main.png" alt="" class="w-75 pb-2" />
+            <p class="text-secondary fs-12 pt-3 fw-semibold pb-1">
+              JobLinker is the heart of the design community and the best
+              resource to discover and connect with designers and jobs
+              worldwide.
+            </p>
+            <div class="footer-social d-flex gap-2 mb-3">
+              <a href="#">
+                <img src="./assets/images/footer/facebook.2e17f4c2.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/images/footer/twitter.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/images/footer/linkedin.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col pt-4">
+            <h6 class="fw-semibold">Resources</h6>
+            <div class="fs-14">
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">About us</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Our Team</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Products</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Contact</a>
+              </li>
+            </div>
+          </div>
+          <div class="col pt-4">
+            <h6 class="fw-semibold">Community</h6>
+            <div class="fs-14">
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Feature</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Pricing</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Credit</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">FAQ</a>
+              </li>
+            </div>
+          </div>
+          <div class="col pt-4">
+            <h6 class="fw-semibold">Quick Links</h6>
+            <div class="fs-14">
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">IOS</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Android</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Microsoft</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Desktop</a>
+              </li>
+            </div>
+          </div>
+          <div class="col pt-4">
+            <h6 class="fw-semibold">More</h6>
+            <div class="fs-14">
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Privacy</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Help</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">Terms</a>
+              </li>
+              <li class="list-group-item pb-1">
+                <a href="#" class="text-secondary text-decoration-none">FAQ</a>
+              </li>
+            </div>
+          </div>
+          <div class="col-3 pt-4">
+            <h6>Download App</h6>
+            <p class="text-secondary fs-12 pt-3 fw-semibold">
+              Download our Apps and get extra 15% Discount on your first
+              Order…!
+            </p>
+            <div class="footer-store d-flex gap-2">
+              <a href="#">
+                <img src="./assets/images/footer/app-store.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/images/footer/android.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer-bottom py-4 border-top border-dark mt-4 d-flex">
+            <div class="col-6">
+              <span class="fs-13 text-secondary">Copyright © 2022. JobBox all right reserved</span>
+            </div>
+            <div class="col-6">
+              <div class="footer-social d-flex gap-3 fs-13 justify-content-end">
+                <a href="#" class="text-decoration-none text-secondary">Privacy Policy</a>
+                <a href="#" class="text-decoration-none text-secondary">Terms & Conditions</a>
+                <a href="#" class="text-decoration-none text-secondary">Security</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- Bs Js file -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

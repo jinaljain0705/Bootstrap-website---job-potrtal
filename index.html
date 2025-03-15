@@ -22,23 +22,22 @@
   <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 z-3 w-100 ">
-      <div class="container">
-        <a class="nav-logo w-25" href="#">
+      <div class="container-fluid">
+        <a class="nav-logo w-25 ps-5" href="#">
           <img src="./assets/images/Banner/Logo-main.png" alt="" class="w-75" />
         </a>
-
-        <nav class="navbar py-3 rounded-3">
-          <form class="d-flex  mx-auto" role="search">
-            <input class="form-control me-2 p-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-primary" type="submit">
-              Search
+        <nav class="py-3 rounded-3 ">
+          <form class="d-flex w-100  position-relative" role="search">
+            <input class="form-control me-2 py-2 w-100 rounded-5 px-5 text-center shadow-sm" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-primary rounded-5 position-absolute search-btn shadow-sm " type="submit">
+              <i class="bi bi-search fs-14"></i>
             </button>
           </form>
         </nav>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
+        <div class="collapse navbar-collapse d-flex" id="navbarNav">
+          <ul class="navbar-nav w-100 d-flex gap-2">
             <li class="nav-item">
-              <a class="nav-link" href="./findjob.html">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" data-bs-toggle="dropdown">Find Jobs</a>
@@ -53,10 +52,10 @@
                   <a class="dropdown-item p-2" href="./findjob.html">Freshers Job</a>
                 </li>
                 <li>
-                  <a class="dropdown-item p-2" href="#">Full Time Job</a>
+                  <a class="dropdown-item p-2" href="./findjob.html">Full Time Job</a>
                 </li>
                 <li>
-                  <a class="dropdown-item p-2" href="#">Job For Women</a>
+                  <a class="dropdown-item p-2" href="./findjob.html">Job For Women</a>
                 </li>
               </ul>
             </li>
@@ -86,20 +85,11 @@
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact</a>
             </li>
+            <li class="nav-item ">
+              <a class="nav-link btn bg-primary text-white px-4 mx-2 login-btn" href="./login.html">
+                <i class="bi bi-person-circle pe-2"></i>Login</a>
+            </li>
           </ul>
-          <div class="dropdown">
-            <a class="btn" href="#" role="button" data-bs-toggle="dropdown">
-              <i class="bi bi-person"></i>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#">Login</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Register</a>
-              </li>
-            </ul>
-          </div>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
