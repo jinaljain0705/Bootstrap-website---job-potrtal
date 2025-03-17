@@ -218,9 +218,10 @@ img{
     left: 0;
     z-index: -1;
 }
-
-.service-box-heading{
-  font-size: 18px;
+.icon{
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
 }
 /* contact Page */
 .contact-banner{
@@ -283,9 +284,4 @@ img{
   100%{
     transform: translateY(0px);
   }
-}
-.icon{
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
 }
