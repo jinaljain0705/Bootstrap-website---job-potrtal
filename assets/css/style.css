@@ -218,6 +218,10 @@ img{
     left: 0;
     z-index: -1;
 }
+
+.service-box-heading{
+  font-size: 18px;
+}
 /* contact Page */
 .contact-banner{
     background-image: url("../images/Contact/banner/banner.png");
@@ -279,4 +283,9 @@ img{
   100%{
     transform: translateY(0px);
   }
+}
+.icon{
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
 }
