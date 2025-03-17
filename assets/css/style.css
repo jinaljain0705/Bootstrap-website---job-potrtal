@@ -61,8 +61,7 @@ img{
   border: none;
 }
 /* Banner */
-.slider,
-.find-job {
+.slider{
   background-color: #e6e6fa;
 }
 .banner-1{
