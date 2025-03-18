@@ -19,82 +19,91 @@
 <body>
     <header>
         <!-- Navbar -->
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 z-3 w-100 ">
-                <div class="container-fluid">
-                    <a class="nav-logo w-25 ps-5" href="#">
-                        <img src="./assets/images/Banner/Logo-main.png" alt="" class="w-75" />
-                    </a>
-                    <nav class="py-3 rounded-3 ">
-                        <form class="d-flex w-100  position-relative" role="search">
-                            <input class="form-control me-2 py-2 w-100 rounded-5 px-5 text-center shadow-sm" type="search"
-                                placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-primary rounded-5 position-absolute search-btn shadow-sm " type="submit">
-                                <i class="bi bi-search fs-14"></i>
-                            </button>
-                        </form>
-                    </nav>
-                    <div class="collapse navbar-collapse d-flex" id="navbarNav">
-                        <ul class="navbar-nav w-100 d-flex gap-2">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown">Find Jobs</a>
-                                <ul class="dropdown-menu p-1">
-                                    <li>
-                                        <a class="dropdown-item p-2" href="./findjob.html">Work From Home</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item p-2" href="./findjob.html">Part Time Job</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item p-2" href="./findjob.html">Freshers Job</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item p-2" href="./findjob.html">Full Time Job</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item p-2" href="./findjob.html">Job For Women</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" data-bs-toggle="dropdown">Services</a>
-                                <ul class="dropdown-menu p-1">
-                                    <li>
-                                        <a class="dropdown-item p-2" href="#">Resume Writing</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item p-2" href="#">Recruitment Services</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item p-2" href="#">Career Counselling</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item p-2" href="#">Freelancing</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item p-2" href="#">Internship</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link btn bg-primary text-white px-4 mx-2 login-btn" href="./login.html">
-                                    <i class="bi bi-person-circle pe-2"></i>Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 z-3 w-100 ">
+            <div class="container-fluid">
+    
+                <a class="nav-logo w-25 ps-lg-5 ps-0 pb-2" href="#">
+                    <img src="./assets/images/Banner/Logo-main.png" alt="" class="w-75" />
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <form class="d-flex w-100 position-relative me-lg-3 me-0 my-3 my-lg-0">
+                        <input class="search form-control me-2 py-2 w-100 rounded-5 px-6 text-center shadow-sm "
+                            type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-primary rounded-5 position-absolute search-btn shadow-sm" type="submit">
+                            <i class="bi bi-search fs-14"></i>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav ms-auto d-flex gap-2 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="findJobsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Find Jobs
+                            </a>
+                            <ul class="dropdown-menu p-1" aria-labelledby="findJobsDropdown">
+                                <li>
+                                    <a class="dropdown-item p-2" href="./findjob.html">Work From Home</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="./findjob.html">Part Time Job</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="./findjob.html">Freshers Job</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="./findjob.html">Full Time Job</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="./findjob.html">Job For Women</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu p-1" aria-labelledby="servicesDropdown">
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Resume Writing</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Recruitment Services</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Career Counselling</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Freelancing</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item p-2" href="#">Internship</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn bg-primary text-white px-4 mx-2 login-btn d-flex" href="./login.html">
+                                <i class="bi bi-person-circle pe-2"></i>Login
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </nav> -->
+            </div>
+        </nav>
     </header>
     <main>
         <!-- slider -->
@@ -315,6 +324,14 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="salary5kto10k">
                                         <label class="form-check-label" for="salary5kto10k">5000 - 10000</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="salary5kto10k">
+                                        <label class="form-check-label" for="salary5kto10k">10000 - 20000</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="salary5kto10k">
+                                        <label class="form-check-label" for="salary5kto10k">20000 - 30000</label>
                                     </div>
                                 </fieldset>
                                 <button type="reset" class="btn btn-outline-secondary w-100">Clear Filters</button>
@@ -700,107 +717,104 @@
         <!-- blog -->
         <section class="blog">
             <div class="container">
-                <div class="row mb-5 text-center">
-                    <h1 class="pb-1 fw-semibold">News and Blog</h1>
-                    <p class="text-secondary fs-5 fw-semibold">
-                        Get the latest news, updates and tips
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="blog-card bg-light border rounded-4 p-1">
-                            <div class="blog-img rounded-4">
-                                <img src="./assets/images/Blog/img-news1.png" alt=""
-                                    class="rounded-4 pt-1 d-block mx-auto" />
-                            </div>
-                            <div class="blog-content p-2">
-                                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">new</a>
-                                <h5 class="py-3">
-                                    21 Job Interview Tips: How To Make a Great Impression
-                                </h5>
-                                <p class="text-secondary fs-14 fw-semibold">
-                                    Our mission is to create the world rsquo;s most sustainable
-                                    healthcare company by creating high-quality healthcare
-                                    products in iconic, sustainable packaging.
-                                </p>
-                            </div>
-                            <div class="blog-bottom d-flex p-2 justify-content-between align-items-center">
-                                <div class="blog-img d-flex">
-                                    <img src="./assets/images/Blog/user1.png" alt="" class="" />
-                                    <div class="blog-info ps-3">
-                                        <span class="fs-14 fw-bold">Sarah Harding</span>
-                                        <p class="fs-12 text-secondary p-0 m-0">06 September</p>
-                                    </div>
-                                </div>
-                                <span class="fs-13 text-secondary fw-semibold justify-content-end">8 mins to read</span>
-                            </div>
-                        </div>
+              <div class="row mb-5 text-center">
+                <h1 class="pb-1 fw-semibold">News and Blog</h1>
+                <p class="text-secondary fs-5 fw-semibold">
+                  Get the latest news, updates and tips
+                </p>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="blog-card bg-light border rounded-4 p-1">
+                    <div class="blog-img rounded-4">
+                      <img src="./assets/images/Blog/img-news1.png" alt="" class="rounded-4 pt-1 d-block mx-auto w-100" />
                     </div>
-                    <div class="col-4">
-                        <div class="blog-card bg-light border rounded-4 p-1">
-                            <div class="blog-img rounded-4">
-                                <img src="./assets/images/Blog/img-news2.png" alt=""
-                                    class="rounded-4 d-block mx-auto pt-1" />
-                            </div>
-                            <div class="blog-content p-2">
-                                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">Events</a>
-                                <h5 class="py-3">
-                                    39 Strengths and Weaknesses To Discuss in a Job Interview
-                                </h5>
-                                <p class="text-secondary fs-14 fw-semibold">
-                                    Our mission is to create the world rsquo;s most sustainable
-                                    healthcare company by creating high-quality healthcare
-                                    products in iconic, sustainable packaging.
-                                </p>
-                            </div>
-                            <div class="blog-bottom d-flex p-2 justify-content-between align-items-center">
-                                <div class="blog-img d-flex">
-                                    <img src="./assets/images/Blog/user2.png" alt="" class="" />
-                                    <div class="blog-info ps-3">
-                                        <span class="fs-14 fw-bold">Steve Jobs</span>
-                                        <p class="fs-12 text-secondary p-0 m-0">06 September</p>
-                                    </div>
-                                </div>
-                                <span class="fs-13 text-secondary fw-semibold justify-content-end">6 mins to read</span>
-                            </div>
-                        </div>
+                    <div class="blog-content p-2">
+                      <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">new</a>
+                      <h5 class="py-3">
+                        21 Job Interview Tips: How To Make a Great Impression
+                      </h5>
+                      <p class="text-secondary fs-14 fw-semibold">
+                        Our mission is to create the world rsquo;s most sustainable
+                        healthcare company by creating high-quality healthcare
+                        products in iconic, sustainable packaging.
+                      </p>
                     </div>
-                    <div class="col-4">
-                        <div class="blog-card bg-light border rounded-4 p-1">
-                            <div class="blog-img rounded-4">
-                                <img src="./assets/images/Blog/img-news3.png" alt=""
-                                    class="rounded-4 pt-1 d-block mx-auto" />
-                            </div>
-                            <div class="blog-content p-2">
-                                <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">News</a>
-                                <h5 class="py-3">
-                                    Interview Question: Why Dont You Have a Degree?
-                                </h5>
-                                <p class="text-secondary fs-14 fw-semibold">
-                                    Our mission is to create the world rsquo;s most sustainable
-                                    healthcare company by creating high-quality healthcare
-                                    products in iconic, sustainable packaging.
-                                </p>
-                            </div>
-                            <div class="blog-bottom d-flex p-2 justify-content-between align-items-center">
-                                <div class="blog-img d-flex">
-                                    <img src="./assets/images/Blog/user3.png" alt="" class="" />
-                                    <div class="blog-info ps-3">
-                                        <span class="fs-14 fw-bold">William Kend</span>
-                                        <p class="fs-12 text-secondary p-0 m-0">06 September</p>
-                                    </div>
-                                </div>
-                                <span class="fs-13 text-secondary fw-semibold justify-content-end">9 mins to read</span>
-                            </div>
+                    <div class="blog-bottom d-flex p-2 justify-content-between align-items-center">
+                      <div class="blog-img d-flex">
+                        <img src="./assets/images/Blog/user1.png" alt="" class="" />
+                        <div class="blog-info ps-3">
+                          <span class="fs-14 fw-bold">Sarah Hero</span>
+                          <p class="fs-12 text-secondary p-0 m-0">06 September</p>
                         </div>
+                      </div>
+                      <span class="fs-13 text-secondary fw-semibold justify-content-end">8 mins to read</span>
                     </div>
+                  </div>
                 </div>
-                <div class="blog-btn d-flex justify-content-center pt-5">
-                    <a href="#" class="btn load-btn text-white px-4 py-3">
-                        <i class="bi bi-arrow-clockwise pe-2"></i>
-                        Load More Posts
-                    </a>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="blog-card bg-light border rounded-4 p-1">
+                    <div class="blog-img rounded-4">
+                      <img src="./assets/images/Blog/img-news2.png" alt="" class="rounded-4 d-block mx-auto pt-1 w-100" />
+                    </div>
+                    <div class="blog-content p-2">
+                      <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">Events</a>
+                      <h5 class="py-3">
+                        39 Strengths To Discuss in Job Interview Questions
+                      </h5>
+                      <p class="text-secondary fs-14 fw-semibold">
+                        Our mission is to create the world rsquo;s most sustainable
+                        healthcare company by creating high-quality healthcare
+                        products in iconic, sustainable packaging.
+                      </p>
+                    </div>
+                    <div class="blog-bottom d-flex p-2 justify-content-between align-items-center">
+                      <div class="blog-img d-flex">
+                        <img src="./assets/images/Blog/user2.png" alt="" class="" />
+                        <div class="blog-info ps-3">
+                          <span class="fs-14 fw-bold">Steve Jobs</span>
+                          <p class="fs-12 text-secondary p-0 m-0">06 September</p>
+                        </div>
+                      </div>
+                      <span class="fs-13 text-secondary fw-semibold justify-content-end">6 mins to read</span>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-sm-12 d-sm-none col-lg-4 d-lg-block">
+                  <div class="blog-card bg-light border rounded-4 p-1">
+                    <div class="blog-img rounded-4">
+                      <img src="./assets/images/Blog/img-news3.png" alt="" class="rounded-4 pt-1 d-block mx-auto w-100" />
+                    </div>
+                    <div class="blog-content p-2">
+                      <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">News</a>
+                      <h5 class="py-3">
+                        Interview Question: Why Dont You Have a Degree?
+                      </h5>
+                      <p class="text-secondary fs-14 fw-semibold">
+                        Our mission is to create the world rsquo;s most sustainable
+                        healthcare company by creating high-quality healthcare
+                        products in iconic, sustainable packaging.
+                      </p>
+                    </div>
+                    <div class="blog-bottom d-flex p-2 justify-content-between align-items-center">
+                      <div class="blog-img d-flex">
+                        <img src="./assets/images/Blog/user3.png" alt="" class="" />
+                        <div class="blog-info ps-3">
+                          <span class="fs-14 fw-bold">William Kend</span>
+                          <p class="fs-12 text-secondary p-0 m-0">06 September</p>
+                        </div>
+                      </div>
+                      <span class="fs-13 text-secondary fw-semibold justify-content-end">9 mins to read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-btn d-flex justify-content-center pt-5">
+                <a href="#" class="btn load-btn text-white px-4 py-3">
+                  <i class="bi bi-arrow-clockwise pe-2"></i>
+                  Load More Posts
+                </a>
+              </div>
             </div>
         </section>
     </main>
@@ -812,7 +826,7 @@
         <section class="Footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <img src="./assets/images/Banner/logo-main.png" alt="" class="w-75 pb-2" />
                         <p class="text-secondary fs-12 pt-3 fw-semibold pb-1">
                             JobLinker is the heart of the design community and the best
@@ -831,7 +845,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col pt-4">
+                    <div class="col-lg pt-4 col-md-4 col-sm-6">
                         <h6 class="fw-semibold">Resources</h6>
                         <div class="fs-14">
                             <li class="list-group-item pb-1">
@@ -848,7 +862,7 @@
                             </li>
                         </div>
                     </div>
-                    <div class="col pt-4">
+                    <div class="col-lg pt-4 col-md-4 col-sm-6">
                         <h6 class="fw-semibold">Community</h6>
                         <div class="fs-14">
                             <li class="list-group-item pb-1">
@@ -865,7 +879,7 @@
                             </li>
                         </div>
                     </div>
-                    <div class="col pt-4">
+                    <div class="col-lg pt-4  col-md-4 col-sm-6">
                         <h6 class="fw-semibold">Quick Links</h6>
                         <div class="fs-14">
                             <li class="list-group-item pb-1">
@@ -882,7 +896,7 @@
                             </li>
                         </div>
                     </div>
-                    <div class="col pt-4">
+                    <div class="col-lg pt-4 col-md-4 col-sm-6">
                         <h6 class="fw-semibold">More</h6>
                         <div class="fs-14">
                             <li class="list-group-item pb-1">
@@ -899,7 +913,7 @@
                             </li>
                         </div>
                     </div>
-                    <div class="col-3 pt-4">
+                    <div class="col-lg-3 pt-4 col-md-4 col-sm-6">
                         <h6>Download App</h6>
                         <p class="text-secondary fs-12 pt-3 fw-semibold">
                             Download our Apps and get extra 15% Discount on your first
@@ -916,15 +930,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="footer-bottom py-4 border-top border-dark mt-4 d-flex">
-                        <div class="col-6">
+                    <div class="footer-bottom py-4 border-top border-dark mt-4 d-flex flex-wrap">
+                        <div class="col-12 col-lg-6 pb-sm-2">
                             <span class="fs-13 text-secondary">Copyright © 2022. JobBox all right reserved</span>
                         </div>
-                        <div class="col-6">
-                            <div class="footer-social d-flex gap-3 fs-13 justify-content-end">
-                                <a href="#" class="text-decoration-none text-secondary">Privacy Policy</a>
-                                <a href="#" class="text-decoration-none text-secondary">Terms & Conditions</a>
-                                <a href="#" class="text-decoration-none text-secondary">Security</a>
+                        <div class="col-12 col-lg-6">
+                            <div class="footer-social d-flex fs-13 justify-content-end d-sm-block d-lg-flex ">
+                                <a href="#" class="text-decoration-none text-secondary pe-4">Privacy Policy</a>
+                                <a href="#" class="text-decoration-none text-secondary pe-4">Terms & Conditions</a>
+                                <a href="#" class="text-decoration-none text-secondary pe-4">Security</a>
                             </div>
                         </div>
                     </div>
