@@ -76,7 +76,7 @@ img {
 /* Banner */
 .slider,
 .find-job {
-  background-color: #e6e6fa;
+  /* background-color: #e6e6fa; */
 }
 .banner-1 ,.banner-3{
   background-image: url("../images/Banner/bg-banner.svg");
