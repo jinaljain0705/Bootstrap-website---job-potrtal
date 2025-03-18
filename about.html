@@ -21,25 +21,34 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 z-3 w-100 ">
       <div class="container-fluid">
-        <a class="nav-logo w-25 ps-5" href="#">
+        
+        <a class="nav-logo w-25 ps-lg-5 pb-lg-2 pb-sm-0 ps-sm-0 " href="#">
           <img src="./assets/images/Banner/Logo-main.png" alt="" class="w-75" />
         </a>
-        <nav class="py-3 rounded-3 ">
-          <form class="d-flex w-100  position-relative" role="search">
-            <input class="form-control me-2 py-2 w-100 rounded-5 px-5 text-center shadow-sm" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-primary rounded-5 position-absolute search-btn shadow-sm " type="submit">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent"> 
+          <form class="d-flex w-100 position-relative me-lg-3 me-0 my-3 my-lg-0">
+            <input class="search form-control me-2 py-2 w-100 rounded-5 px-6 text-center shadow-sm " type="search"
+              placeholder="Search" aria-label="Search" />
+            <button class="btn btn-primary rounded-5 position-absolute search-btn shadow-sm" type="submit">
               <i class="bi bi-search fs-14"></i>
             </button>
           </form>
-        </nav>
-        <div class="collapse navbar-collapse d-flex" id="navbarNav">
-          <ul class="navbar-nav w-100 d-flex gap-2">
+          <ul class="navbar-nav ms-auto d-flex gap-2 align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" data-bs-toggle="dropdown">Find Jobs</a>
-              <ul class="dropdown-menu p-1">
+              <a class="nav-link dropdown-toggle" href="#" id="findJobsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Find Jobs
+              </a>
+              <ul class="dropdown-menu p-1" aria-labelledby="findJobsDropdown">
                 <li>
                   <a class="dropdown-item p-2" href="./findjob.html">Work From Home</a>
                 </li>
@@ -58,8 +67,11 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" data-bs-toggle="dropdown">Services</a>
-              <ul class="dropdown-menu p-1">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu p-1" aria-labelledby="servicesDropdown">
                 <li>
                   <a class="dropdown-item p-2" href="#">Resume Writing</a>
                 </li>
@@ -83,35 +95,35 @@
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact</a>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link btn bg-primary text-white px-4 mx-2 login-btn" href="./login.html">
-                <i class="bi bi-person-circle pe-2"></i>Login</a>
+            <li class="nav-item">
+              <a class="nav-link btn bg-primary text-white px-4 mx-2 login-btn d-flex" href="./login.html">
+                <i class="bi bi-person-circle pe-2"></i>Login
+              </a>
             </li>
           </ul>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </div>
     </nav>
   </header>
   <main>
-    <!-- banner -->
-     <section class="banner py-0 bg-black ">
-        <div class="contact-banner opacity-50 py-5 ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <h2 class="text-white z-1 ">About Us</h2>
-                        <p class="text-white fw-bold fs-5">Get the latest news, updates and tips</p>
-                    </div>
-                
-                </div>
-            </div>
+     <!-- banner -->
+     <section class="banner py-0">
+      <div class="banner-dark-bg bg-black position-relative">
+        <div class="contact-banner opacity-25 py-5">
         </div>
-        <!-- <div class="bg bg-black position-relative">
-            <img src="./assets/images/Contact/banner/banner.png" alt="" class=" pt-4 opacity-50">
-        </div> -->       
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-8 col-md-6  contact-card position-absolute d-flex">
+                  <div class="contact-heading  ">
+                    <h2 class="text-white z-1 fw-bold">About Us</h2>
+                    <p class="text-white fw-bold fs-5">Get the latest news, updates and tips</p>
+                  </div> 
+              </div>
+              
+        </div>
+        </div>
+      </div>
+        
      </section>
     
      <!-- Team section -->
@@ -127,7 +139,7 @@
                      at congue tellus dui quis nisl.</p>
             </div>
             <div class="row mt-5">
-                <div class="col">
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3 mb-lg-0">
                     <div class="team-card bg-white py-5 rounded-3">
                         <div class="team-img  d-flex justify-content-center">
                             <img src="./assets/images/About/team/team1.png" alt="" class=" rounded-circle">
@@ -156,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3 mb-lg-0">
                     <div class="team-card bg-white py-5 rounded-3">
                         <div class="team-img  d-flex justify-content-center">
                             <img src="./assets/images/About/team/team2.png" alt="" class=" rounded-circle">
@@ -185,7 +197,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3 mb-lg-0">
                     <div class="team-card bg-white py-5 rounded-3">
                         <div class="team-img  d-flex justify-content-center">
                             <img src="./assets/images/About/team/team3.png" alt="" class=" rounded-circle">
@@ -214,7 +226,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-6 col-lg-4 d-lg-none d-xl-block col-xl-3">
                     <div class="team-card bg-white py-5 rounded-3">
                         <div class="team-img  d-flex justify-content-center">
                             <img src="./assets/images/About/team/team4.png" alt="" class=" rounded-circle">
@@ -245,7 +257,7 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col">
+                <div class="col-sm-6 col-lg-4 col-xl-3 mb-3 mb-lg-0">
                     <div class="team-card bg-white py-5 rounded-3">
                         <div class="team-img d-flex justify-content-center">
                             <img src="./assets/images/About/team/team5.png" alt="" class=" rounded-circle">
@@ -274,7 +286,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-6 col-lg-4 col-xl-3  mb-3 mb-lg-0">
                     <div class="team-card bg-white py-5 rounded-3">
                         <div class="team-img  d-flex justify-content-center">
                             <img src="./assets/images/About/team/team6.png" alt="" class=" rounded-circle">
@@ -303,7 +315,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-6 col-lg-4 col-xl-3  mb-3 mb-lg-0">
                     <div class="team-card bg-white py-5 rounded-3">
                         <div class="team-img  d-flex justify-content-center">
                             <img src="./assets/images/About/team/team7.png" alt="" class=" rounded-circle">
@@ -332,7 +344,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm-6 col-lg-4 d-lg-none d-xl-block col-xl-3">
                     <div class="team-card bg-white py-5 rounded-3">
                         <div class="team-img  d-flex justify-content-center">
                             <img src="./assets/images/About/team/team8.png" alt="" class=" rounded-circle">
@@ -403,7 +415,7 @@
       <!-- feedback -->
        <section class="feedback  py-120 bg-white">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="team-heading text-center">
                     <h2 class="fw-semibold">Our Happy Customer</h2>
                     <p class="text-secondary fw-bold fs-6 mb-5">
@@ -411,7 +423,7 @@
                         is to get overwhelmed with the number.
                     </p>
                 </div>
-                <div class="col">
+                <div class="col-8 col-lg-4 mb-3">
                     <div class="feedback-card p-4 position-relative rounded-4">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Blanditiis, ut! Aperiam autem delectus nulla non neque quaerat 
@@ -427,7 +439,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-8 col-lg-4 mb-3">
                     <div class="feedback-card p-4 position-relative rounded-4">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Blanditiis, ut! Aperiam autem delectus nulla non neque quaerat 
@@ -443,7 +455,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-8 col-lg-4 mb-3">
                     <div class="feedback-card p-4 position-relative rounded-4">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Blanditiis, ut! Aperiam autem delectus nulla non neque quaerat 
@@ -477,9 +489,9 @@
        <!-- CTA -->
         <section class="cta py-100 ">
             <div class="container">
-                <div class=" cta-bg py-4 d-flex justify-content-between border-top border-bottom border-secondary-subtle my-3 w-100">
+                <div class="cta-bg py-4 d-md-flex justify-content-between border-top border-bottom border-secondary-subtle my-3 w-100 d-sm-block ">
                     <div class="row ">
-                        <div class="">
+                        <div class="col-12">
                             <div class="cta-content">
                                 <h1 class="">Most Complete Job portal</h1>
                                 <p class="mb-0 fw-semibold text-secondary">Signup and start find your job or talents.</p>
@@ -487,8 +499,8 @@
                         </div>
                     </div>
                     <div class="cta-btn d-flex h-75 gap-3 py-3">
-                        <a href="#" class="btn border-secondary p-3 px-5 btn-1">Sign Up</a>
-                        <a href="#" class="btn border btn-2 bg-primary p-3 px-5 text-white ">Post Job</a>
+                        <a href="#" class="btn border-secondary p-3 px-lg-5 px-sm-3 btn-1 ">Sign Up</a>
+                        <a href="#" class="btn border btn-2 bg-primary p-3 px-lg-5 px-sm-3 text-white ">Post Job</a>
                     </div>
                 </div>
             </div>
@@ -502,7 +514,7 @@
     <section class="Footer">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-4 col-sm-6">
             <img src="./assets/images/Banner/logo-main.png" alt="" class="w-75 pb-2" />
             <p class="text-secondary fs-12 pt-3 fw-semibold pb-1">
               JobLinker is the heart of the design community and the best
@@ -521,7 +533,7 @@
               </a>
             </div>
           </div>
-          <div class="col pt-4">
+          <div class="col-lg pt-4 col-md-4 col-sm-6">
             <h6 class="fw-semibold">Resources</h6>
             <div class="fs-14">
               <li class="list-group-item pb-1">
@@ -538,7 +550,7 @@
               </li>
             </div>
           </div>
-          <div class="col pt-4">
+          <div class="col-lg pt-4 col-md-4 col-sm-6">
             <h6 class="fw-semibold">Community</h6>
             <div class="fs-14">
               <li class="list-group-item pb-1">
@@ -555,7 +567,7 @@
               </li>
             </div>
           </div>
-          <div class="col pt-4">
+          <div class="col-lg pt-4  col-md-4 col-sm-6">
             <h6 class="fw-semibold">Quick Links</h6>
             <div class="fs-14">
               <li class="list-group-item pb-1">
@@ -572,7 +584,7 @@
               </li>
             </div>
           </div>
-          <div class="col pt-4">
+          <div class="col-lg pt-4 col-md-4 col-sm-6">
             <h6 class="fw-semibold">More</h6>
             <div class="fs-14">
               <li class="list-group-item pb-1">
@@ -589,7 +601,7 @@
               </li>
             </div>
           </div>
-          <div class="col-3 pt-4">
+          <div class="col-lg-3 pt-4 col-md-4 col-sm-6">
             <h6>Download App</h6>
             <p class="text-secondary fs-12 pt-3 fw-semibold">
               Download our Apps and get extra 15% Discount on your first
@@ -606,15 +618,15 @@
           </div>
         </div>
         <div class="row">
-          <div class="footer-bottom py-4 border-top border-dark mt-4 d-flex">
-            <div class="col-6">
+          <div class="footer-bottom py-4 border-top border-dark mt-4 d-flex flex-wrap">
+            <div class="col-12 col-lg-6 pb-sm-2">
               <span class="fs-13 text-secondary">Copyright © 2022. JobBox all right reserved</span>
             </div>
-            <div class="col-6">
-              <div class="footer-social d-flex gap-3 fs-13 justify-content-end">
-                <a href="#" class="text-decoration-none text-secondary">Privacy Policy</a>
-                <a href="#" class="text-decoration-none text-secondary">Terms & Conditions</a>
-                <a href="#" class="text-decoration-none text-secondary">Security</a>
+            <div class="col-12 col-lg-6">
+              <div class="footer-social d-flex fs-13 justify-content-end d-sm-block d-lg-flex ">
+                <a href="#" class="text-decoration-none text-secondary pe-4">Privacy Policy</a>
+                <a href="#" class="text-decoration-none text-secondary pe-4">Terms & Conditions</a>
+                <a href="#" class="text-decoration-none text-secondary pe-4">Security</a>
               </div>
             </div>
           </div>

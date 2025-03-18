@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Title of Webpage -->
   <title>Joblinker</title>
   <!-- Favicon -->
@@ -22,6 +22,91 @@
   <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 z-3 w-100 ">
+      <div class="container-fluid">
+        
+        <a class="nav-logo w-25 ps-lg-5 ps-0 pb-2" href="#">
+          <img src="./assets/images/Banner/Logo-main.png" alt="" class="w-75" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent"> 
+          <form class="d-flex w-100 position-relative me-lg-3 me-0 my-3 my-lg-0">
+            <input class="search form-control me-2 py-2 w-100 rounded-5 px-6 text-center shadow-sm " type="search"
+              placeholder="Search" aria-label="Search" />
+            <button class="btn btn-primary rounded-5 position-absolute search-btn shadow-sm" type="submit">
+              <i class="bi bi-search fs-14"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav ms-auto d-flex gap-2 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="findJobsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Find Jobs
+              </a>
+              <ul class="dropdown-menu p-1" aria-labelledby="findJobsDropdown">
+                <li>
+                  <a class="dropdown-item p-2" href="./findjob.html">Work From Home</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="./findjob.html">Part Time Job</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="./findjob.html">Freshers Job</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="./findjob.html">Full Time Job</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="./findjob.html">Job For Women</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu p-1" aria-labelledby="servicesDropdown">
+                <li>
+                  <a class="dropdown-item p-2" href="#">Resume Writing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Recruitment Services</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Career Counselling</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Freelancing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Internship</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn bg-primary text-white px-4 mx-2 login-btn d-flex" href="./login.html">
+                <i class="bi bi-person-circle pe-2"></i>Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 z-3 w-100 ">
       <div class="container-fluid">
         <a class="nav-logo w-25 ps-5" href="#">
           <img src="./assets/images/Banner/Logo-main.png" alt="" class="w-75" />
@@ -95,11 +180,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-    </nav>
-  </header>
+    </nav> -->
   <main>
     <!-- banner -->
-    <section class="banner z-3">
+    <section class="banner z-3 ">
       <div id="carouselCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
@@ -109,59 +193,222 @@
         </div>
         <div class="carousel-inner bg-dark position-relative">
           <!-- Banner-1 -->
-          <div class="carousel-item banner-1">
-            <img src="./assets/images/Banner/banner-3.jpg" class="d-block w-100 opacity-50" alt="..." />
-            <div class="row">
-              <div class="col">
-                <div class="carousel-caption d-none d-md-block position-absolute text-start">
-                  <h1 class="display-1 fw-bold">
-                    Shape the Future <br />
-                    <span class="small-heading">With us </span>
-                  </h1>
-                  <p class="mt-3">
-                    Looking for a new career opportunity? We have multiple
-                    positions open! Apply now and take the <br />next step in
-                    your professional journey.
-                  </p>
-                  <a href="#" class="btn mt-3 py-3 px-5 fw-bold join-btn">Join Now</a>
+          <div class="carousel-item banner-1  w-100">
+            <div class="carousel-caption  position-absolute text-start">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-6">
+                    <div class="banner-title">
+                      <h1 class="display-5 fw-bold text-dark">
+                        The<span class="text-primary">Easiest Way</span> <br> to Get Your New Job <br />
+                      </h1>
+                      <p class="mt-3 text-secondary">
+                        Each month, more than 3 million job seekers turn to <br />
+                        website in their search for work, making over 140,000 <br>
+                        applications every single day
+                      </p>
+
+                      <div class="banner-search bg-white py-4 px-3 rounded-4 mt-4">
+                        <form class="d-flex align-items-center gap-2">
+                          <div class="search-box">
+                            <select class="form-select select-active">
+                              <option value="0">Industry</option>
+                              <option value="1">Software</option>
+                              <option value="2">Finance</option>
+                              <option value="3">Recruting</option>
+                              <option value="4">Management</option>
+                              <option value="5">Development</option>
+                              <option value="6">Advertising</option>
+                            </select>
+                          </div>
+                          <div class="box-industry">
+                            <select class="form-select input-location mr-10 select-active">
+                              <option value="true">Location</option>
+                              <option value="AR">Argentina</option>
+                              <option value="CA">Canada</option>
+                              <option value="AS">Australia</option>
+                              <option value="IN">India</option>
+                              <option value="IT">Italy</option>
+                              <option value="JP">Japan</option>
+                              <option value="JR">Jersey</option>
+                              <option value="JD">Jordan</option>
+                              <option value="LD">Londan</option>
+                              <option value="AM">America</option>
+                              <option value="NZ">New Zealand</option>
+                              <option value="NO">Norway</option>
+                            </select>
+                          </div>
+
+                          <input class="form-control w-50 shadow-sm" type="text" placeholder="Your Keyword...">
+                          <a href="#" class="btn btn-primary font-sm d-flex">
+                            <i class="bi bi-search pe-2"></i>Search
+                          </a>
+                        </form>
+                      </div>
+                      <div class="tag-listing fs-14 mt-4">
+                        <span class="fw-bold text-secondary">Popuplar Searches :</span>
+                        <a href="#" class="mx-1 text-secondary">Designer, </a>
+                        <a href="#" class="mx-1 text-secondary">Web, </a>
+                        <a href="#" class="mx-1 text-secondary">IOS, </a>
+                        <a href="#" class="mx-1 text-secondary">Developer, </a>
+                        <a href="#" class="mx-1 text-secondary">PHP, </a>
+                        <a href="#" class="mx-1 text-secondary">Senior, </a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col12 col-xl-6  d-xs-block d-none d-xl-block">
+                    <div class="banner-img position-relative">
+                      <img src="./assets/images/Banner/1/banner1.png" alt="" class="ps-3">
+                      <img src="./assets/images/Banner/1/banner2.png" alt="" class="position-absolute">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- banner-2 -->
-          <div class="carousel-item active banner-2">
-            <img src="./assets/images/Banner/banner-5.jpg" class="d-block w-100 opacity-50 bg-dark" alt="..." />
-            <div class="carousel-caption d-none d-md-block text-start bottom-0">
-              <h1 class="display-1 fw-bold lh-1">
-                Empowering <br />Employers <br />for Success
-              </h1>
-              <p class="fs-5">
-                Streamlined HR Solutions | Recruitment |
-                <br />Workforce Management
-              </p>
-              <a href="#" class="btn py-2 px-5 bg-success">Discover More..</a>
+          <div class="carousel-item banner-2  position-relative w-100 ">
+            <div class="carousel-caption position-absolute text-start">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="banner-title text-center">
+                      <h1 class="display-5 fw-bold text-white">
+                        The #1 <span class="text-green">Job Board for</span><br>
+                        Hiring or Find Your Next Job
+                      </h1>
+                      <p class="mt-4 text-white ">
+                        Each month, more than 3 million job seekers turn to
+                        website in their search for <br />work, making over 140,000
+                        applications every single day
+                      </p>
+                      <div class="banner-search rounded-4 mt-5 d-flex justify-content-center w-100">
+                        <form
+                          class="d-flex align-items-center justify-content-center flex-column gap-2 w-lg-75  w-sm-75 bg-white p-4 rounded-4 flex-lg-row">
+                          <div class="search-box w-100">
+                            <select class="form-select select-active">
+                              <option value="0">Industry</option>
+                              <option value="1">Software</option>
+                              <option value="2">Finance</option>
+                              <option value="3">Recruting</option>
+                              <option value="4">Management</option>
+                              <option value="5">Development</option>
+                              <option value="6">Advertising</option>
+                            </select>
+                          </div>
+                          <div class="box-industry w-100">
+                            <select class="form-select input-location mr-10 select-active">
+                              <option value="true">Location</option>
+                              <option value="AR">Argentina</option>
+                              <option value="CA">Canada</option>
+                              <option value="AS">Australia</option>
+                              <option value="IN">India</option>
+                              <option value="IT">Italy</option>
+                              <option value="JP">Japan</option>
+                              <option value="JR">Jersey</option>
+                              <option value="JD">Jordan</option>
+                              <option value="LD">Londan</option>
+                              <option value="AM">America</option>
+                              <option value="NZ">New Zealand</option>
+                              <option value="NO">Norway</option>
+                            </select>
+                          </div>
+
+                          <input class="form-control w-100 shadow-sm" type="text" placeholder="Your Keyword...">
+                          <a href="#" class="btn btn-primary font-sm d-flex py-2 ">
+                            <i class="bi bi-search pe-2"></i>Search
+                          </a>
+                        </form>
+                      </div>
+                      <div class="tag-listing fs-14 mt-3">
+                        <span class="fw-bold">Popuplar Searches :</span>
+                        <a href="#" class="mx-1 text-white">Designer, </a>
+                        <a href="#" class="mx-1 text-white">Web, </a>
+                        <a href="#" class="mx-1 text-white">IOS, </a>
+                        <a href="#" class="mx-1 text-white">Developer, </a>
+                        <a href="#" class="mx-1 text-white">PHP, </a>
+                        <a href="#" class="mx-1 text-white">Senior, </a>
+                        <a href="#" class="mx-1 text-white">Engineer, </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Banner-3 -->
-          <div class="carousel-item banner-3">
-            <img src="./assets/images/Banner/banner-5.jpg" class="d-block w-100 opacity-25" alt="..." />
-            <div class="carousel-caption d-none d-md-block top-50">
-              <h1 class="display-1 fw-bold lh-1">Featured Jobs For You</h1>
-              <p>Check Out the latest top job listings and aplly today.</p>
-              <a href="#" class="btn py-2 px-5 bg-success">Find Job</a>
+          <div class="carousel-item banner-3 active ">
+            <div class="carousel-caption position-absolute text-start">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="banner-title">
+                      <h1 class="display-5 fw-bold text-dark">
+                        Find Jobs, <br>Hire Creatives <br />
+                      </h1>
+                      <p class="mt-3 text-secondary">
+                        Each month, more than 3 million job seekers turn to <br />
+                        website in their search for work, making over 140,000 <br>
+                        applications every single day
+                      </p>
+                      <div class="cta-btn d-flex h-75 gap-3 py-3">
+                        <a href="#" class="btn border btn-2 bg-primary p-2 px-4 text-white ">Get Started</a>
+                        <a href="#" class="btn border-secondary p-2 px-4 btn-1">Learn More</a>
+                      </div>
+                      <div class="heding-line mt-3 mb-2">
+                        <p class="text-secondary fw-semibold">Trusted By</p>
+                      </div>
+                      <div class="company-logo d-flex gap-3 flex-wrap">
+                        <a href="#">
+                          <img src="./assets/images/Banner/3/logo/microsoft.svg" alt="">
+                        </a>
+                        <a href="#">
+                          <img src="./assets/images/Banner/3/logo/sony.svg" alt="">
+                        </a>
+                        <a href="#">
+                          <img src="./assets/images/Banner/3/logo/acer.svg" alt="">
+                        </a>
+                        <a href="#">
+                          <img src="./assets/images/Banner/3/logo/nokia.svg" alt="">
+                        </a>
+
+                      </div>
+
+                      <div class="tag-listing fs-14 mt-4">
+                        <span class="fw-bold text-secondary">Popuplar Searches :</span>
+                        <a href="#" class="mx-1 text-secondary">Designer, </a>
+                        <a href="#" class="mx-1 text-secondary">Web, </a>
+                        <a href="#" class="mx-1 text-secondary">IOS, </a>
+                        <a href="#" class="mx-1 text-secondary">Developer, </a>
+                        <a href="#" class="mx-1 text-secondary">PHP, </a>
+                        <a href="#" class="mx-1 text-secondary">Senior, </a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 d-none d-lg-block">
+                    <div class="banner-img-3 w-100">
+                      <img src="./assets/images/Banner/3/banner.png" alt="" class="w-100">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </section> 
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>
+    </section>
     <!--Job -->
     <section class="job">
       <div class="container">
@@ -170,7 +417,7 @@
           <p class="text-secondary text-center fs-5 fw-semibold mb-0">
             Search and connect with the right candidates faster.
           </p>
-          <div class="job-category py-5 d-flex justify-content-center gap-2">
+          <div class="job-category py-5 d-flex justify-content-center gap-2 flex-wrap">
             <a href="#" class="btn text-primary">
               <i class="bi bi-kanban pe-2"></i>
               Management
@@ -420,10 +667,10 @@
                 </span>
               </div>
               <div class="job-description pt-3 pb-2">
-                <p class="fs-14 paragraph-color">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  illum minus adipisci laudantium quasi iste dicta omnis
-                  obcaecati! Veritatis minima
+                <p class="fs-14 paragraph-color pe-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae architecto eveniet, dolor quo repellendus
+                  pariatur
                 </p>
               </div>
               <div class="job-skills d-flex gap-2 pb-2">
@@ -468,10 +715,10 @@
                 </span>
               </div>
               <div class="job-description pt-3 pb-2">
-                <p class="fs-14 paragraph-color">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  illum minus adipisci laudantium quasi iste dicta omnis
-                  obcaecati! Veritatis minima
+                <p class="fs-14 paragraph-color pe-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae architecto eveniet, dolor quo repellendus
+                  pariatur
                 </p>
               </div>
               <div class="job-skills d-flex gap-2 pb-2">
@@ -515,10 +762,10 @@
                 </span>
               </div>
               <div class="job-description pt-3 pb-2">
-                <p class="fs-14 paragraph-color">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  illum minus adipisci laudantium quasi iste dicta omnis
-                  obcaecati! Veritatis minima
+                <p class="fs-14 paragraph-color pe-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae architecto eveniet, dolor quo repellendus
+                  pariatur
                 </p>
               </div>
               <div class="job-skills d-flex gap-2 pb-2">
@@ -564,10 +811,10 @@
                 </span>
               </div>
               <div class="job-description pt-3 pb-2">
-                <p class="fs-14 paragraph-color">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  illum minus adipisci laudantium quasi iste dicta omnis
-                  obcaecati! Veritatis minima
+                <p class="fs-14 paragraph-color pe-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae architecto eveniet, dolor quo repellendus
+                  pariatur
                 </p>
               </div>
               <div class="job-skills d-flex gap-2 pb-2">
@@ -593,14 +840,16 @@
     <section class="Search-job py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 position-relative">
+          <div class="col-lg-6 col-md-12 position-relative">
             <div class="search-img z-1 ">
               <img src="./assets/images/Search-job/img1.png" alt="" class="z-1 rounded-5 figure-img mx-auto" />
-              <img src="./assets/images/Search-job/img-chart.png" alt="" class="search-1 position-absolute z-n1" />
-              <img src="./assets/images/Search-job/controlcard.png" alt="" class="search-2 position-absolute z-n1" />
+              <img src="./assets/images/Search-job/img-chart.png" alt=""
+                class="search-1 position-absolute z-n1 d-none d-lg-block " />
+              <img src="./assets/images/Search-job/controlcard.png" alt=""
+                class="search-2 position-absolute z-n1 d-none d-md-block" />
             </div>
           </div>
-          <div class=" col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center pt-4">
+          <div class=" col-lg-6 col-md-12 pt-md-5 d-flex justify-content-center pt-4">
             <div class="search-content px-5 pt-2">
               <span class="h3 fw-bold text-secondary">Milloins of Jobs</span>
               <h1 class="fs-52 fw-bold py-2">
@@ -625,7 +874,7 @@
     <section class="our-work py-120 pb-0 ">
       <div class="container">
         <div class="row">
-          <div class="col-3 text-center">
+          <div class="col-sm-6 col-lg-3 text-center">
             <h3 class="text-primary display-4 fw-bold">25 K+</h3>
             <span class="fw-bold fs-5">Completed Case</span>
             <p class="text-secondary fs-14 pt-2 px-5">
@@ -633,7 +882,7 @@
               business
             </p>
           </div>
-          <div class="col-3 text-center">
+          <div class="col-sm-6 col-lg-3 text-center">
             <h3 class="text-primary display-4 fw-bold">17 +</h3>
             <span class="fw-bold fs-5">Our Office</span>
             <p class="text-secondary fs-14 pt-2 px-5">
@@ -641,7 +890,7 @@
               business
             </p>
           </div>
-          <div class="col-3 text-center">
+          <div class="col-sm-6 col-lg-3 text-center">
             <h3 class="text-primary display-4 fw-bold">86 +</h3>
             <span class="fw-bold fs-5">Skilled People</span>
             <p class="text-secondary fs-14 pt-2 px-5">
@@ -649,7 +898,7 @@
               business
             </p>
           </div>
-          <div class="col-3 text-center">
+          <div class="col-sm-6 col-lg-3 text-center">
             <h3 class="text-primary display-4 fw-bold">28 +</h3>
             <span class="fw-bold fs-5">Happy Clients</span>
             <p class="text-secondary fs-14 pt-2 px-5">
@@ -663,13 +912,13 @@
     <!-- Our client -->
     <section class="client py-100">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <h1 class="text-center pt-5 pb-1 fw-semibold">Top Candidates</h1>
           <p class="text-secondary text-center fs-5 fw-semibold mb-5">
             Jobs is a curated job board of the best jobs for developers,
             designers and marketers in the tech industry.
           </p>
-          <div class="col-3 mt-4">
+          <div class=" col-md-6 col-xl-4 col-xxl-3 mt-4">
             <div class="client-card bg-light p-3 rounded-4 pt-4">
               <div class="client-img d-flex">
                 <img src="./assets/images/Clients/user1.png" alt="" class="" />
@@ -715,7 +964,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 mt-4">
+          <div class="col-md-6 col-xl-4 col-xxl-3 mt-4">
             <div class="client-card bg-light p-3 rounded-4 pt-4">
               <div class="client-img d-flex">
                 <img src="./assets/images/Clients/user2.png" alt="" class="" />
@@ -761,7 +1010,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 mt-4">
+          <div class="col-md-6 col-xl-4 col-xxl-3 mt-4">
             <div class="client-card bg-light p-3 rounded-4 pt-4">
               <div class="client-img d-flex">
                 <img src="./assets/images/Clients/user4.png" alt="" class="" />
@@ -805,7 +1054,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 mt-4">
+          <div class="col-md-6 col-xl-4 col-xxl-3 mt-4">
             <div class="client-card bg-light p-3 rounded-4 pt-4">
               <div class="client-img d-flex">
                 <img src="./assets/images/Clients/user5.png" alt="" class="" />
@@ -858,13 +1107,13 @@
     <section class="profile py-100">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="profile-img">
-              <img src="./assets/images/Profile/img-profile.png" alt="" class="rounded-4">
+              <img src="./assets/images/Profile/img-profile.png" alt="" class="rounded-4 w-100">
             </div>
           </div>
-          <div class="col-6">
-            <div class="profile-content mt-3 ps-5 ms-1">
+          <div class="col-12 col-lg-6">
+            <div class="profile-content mt-1 ps-2 ms-1 d-lg-block d-sm-flex flex-column">
               <h5 class="text-secondary fw-bold pt-2 pb-2">Create-Profile</h5>
               <h1 class="fw-semibold lh-sm">Create Your Personal Account <span class="text-primary">Profile</span></h1>
               <p class="text-secondary fw-semibold py-2">
@@ -889,7 +1138,7 @@
           </p>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-xxl col-xl-3 col-md-4 col-sm-6 col-xs-12">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-1.png" alt="" class="object-fit-contain" />
@@ -914,7 +1163,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-xxl col-xl-3 col-md-4 col-sm-6 col-xs-12 m-xs-3">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-2.png" alt="" class="object-fit-contain" />
@@ -939,7 +1188,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-xxl col-xl-3 col-md-4 d-sm-none d-md-block">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-3.png" alt="" class="object-fit-contain" />
@@ -964,7 +1213,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class=" col-xxl col-xl-3 col-lg-4 d-lg-none d-xl-block d-sm-none">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-4.png" alt="" class="object-fit-contain" />
@@ -989,7 +1238,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-xxl col-xl-3 d-none d-xxl-block">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-5.png" alt="" class="object-fit-contain" />
@@ -1016,7 +1265,7 @@
           </div>
         </div>
         <div class="row mt-3">
-          <div class="col">
+          <div class="col col-xxl col-xl-3 col-md-4 col-sm-6 col-xs-12">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-6.png" alt="" class="object-fit-contain" />
@@ -1041,7 +1290,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col col-xxl col-xl-3 col-md-4 col-sm-6 col-xs-12 m-xs-3">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-7.png" alt="" class="object-fit-contain" />
@@ -1066,7 +1315,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col col-xxl col-xl-3 col-md-4 d-sm-none d-md-block">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-8.png" alt="" class="object-fit-contain" />
@@ -1091,7 +1340,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col col-xxl col-xl-3 col-lg-4 d-lg-none d-xl-block d-sm-none">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-6.png" alt="" class="object-fit-contain" />
@@ -1116,7 +1365,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col col-xxl col-xl-3 d-none d-xxl-block">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-2.png" alt="" class="object-fit-contain" />
@@ -1143,7 +1392,7 @@
           </div>
         </div>
         <div class="row mt-3">
-          <div class="col">
+          <div class="col col-xxl col-xl-3 col-md-4 col-sm-6 col-xs-12">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-5.png" alt="" class="object-fit-contain" />
@@ -1168,7 +1417,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col col-xxl col-xl-3 col-md-4 col-sm-6 col-xs-12 m-xs-3">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-3.png" alt="" class="object-fit-contain" />
@@ -1193,7 +1442,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col col-xxl col-xl-3 col-md-4 d-sm-none d-md-block">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-6.png" alt="" class="object-fit-contain" />
@@ -1218,7 +1467,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col col-xxl col-xl-3 col-lg-4 d-lg-none d-xl-block d-sm-none">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-2.png" alt="" class="object-fit-contain" />
@@ -1243,7 +1492,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col col-xxl col-xl-3 d-none d-xxl-block">
             <div class="rec-card bg-light p-3 rounded-4">
               <div class="rec-img d-flex align-items-center">
                 <img src="./assets/images/job/brand-8.png" alt="" class="object-fit-contain" />
@@ -1275,9 +1524,9 @@
     <section class="service">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6 pb-md-3">
             <div class="service-content d-flex px-5 py-4 rounded-4">
-              <img src="./assets/images/service/job-tools.png" alt="" class="py-3" />
+              <img src="./assets/images/service/job-tools.png" alt="" class="py-3 w-25" />
               <div class="service-info ps-4 py-3">
                 <h3 class="fw-semibold">Job Tools Services</h3>
                 <p class="fs-14 text-secondary">
@@ -1291,7 +1540,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="service-content d-flex px-5 py-4 rounded-4 c-2">
               <img src="./assets/images/service/planning-job.png" alt="" class="py-3 w-25" />
               <div class="service-info ps-4 py-3">
@@ -1320,10 +1569,10 @@
           </p>
         </div>
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-5">
             <div class="place-card bg-light border rounded-4 p-2">
               <div class="place-img mb-2 overflow-hidden rounded-4">
-                <img src="./assets/images/Places/place-1.png" alt="" class="rounded-4 overflow-hidden" />
+                <img src="./assets/images/Places/place-1.png" alt="" class="rounded-4 overflow-hidden w-100" />
               </div>
               <h4 class="p-2 pb-0">Paris,france</h4>
               <div class="place-content text-secondary d-flex justify-content-between ps-2 fs-14 pb-2">
@@ -1332,7 +1581,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-md-7">
             <div class="place-card bg-light border rounded-4 p-2">
               <div class="place-img mb-2 overflow-hidden rounded-4">
                 <img src="./assets/images/Places/place-2.png" alt="" class="rounded-4 w-100 overflow-hidden" />
@@ -1344,7 +1593,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-lg-5 pt-md-3 pt-lg-0">
             <div class="place-card bg-light border rounded-4 p-2">
               <div class="place-img mb-2 overflow-hidden rounded-4">
                 <img src="./assets/images/Places/place-3.png" alt="" class="w-100 rounded-4 overflow-hidden" />
@@ -1358,7 +1607,7 @@
           </div>
         </div>
         <div class="row mt-3">
-          <div class="col-4">
+          <div class="col-lg-4 col-md-7">
             <div class="place-card bg-light border rounded-4 p-2">
               <div class="place-img mb-2 overflow-hidden rounded-4">
                 <img src="./assets/images/Places/place-4.png" alt="" class="rounded-4 w-100 overflow-hidden" />
@@ -1370,7 +1619,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-lg-5 col-md-7 d-sm-none d-lg-block">
             <div class="place-card bg-light border rounded-4 p-2">
               <div class="place-img mb-2 overflow-hidden rounded-4">
                 <img src="./assets/images/Places/place-5.png" alt="" class="rounded-4 w-100 overflow-hidden" />
@@ -1382,10 +1631,10 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-5 ">
             <div class="place-card bg-light border rounded-4 p-2">
               <div class="place-img mb-2 overflow-hidden rounded-4">
-                <img src="./assets/images/Places/place-6.png" alt="" class="rounded-4 overflow-hidden" />
+                <img src="./assets/images/Places/place-6.png" alt="" class="rounded-4 w-100 overflow-hidden" />
               </div>
               <h4 class="p-2 pb-0">Berlin, Germany</h4>
               <div class="place-content text-secondary d-flex justify-content-between ps-2 fs-14 pb-2">
@@ -1406,11 +1655,11 @@
             Get the latest news, updates and tips
           </p>
         </div>
-        <div class="row">
-          <div class="col-4">
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-lg-4">
             <div class="blog-card bg-light border rounded-4 p-1">
               <div class="blog-img rounded-4">
-                <img src="./assets/images/Blog/img-news1.png" alt="" class="rounded-4 pt-1 d-block mx-auto" />
+                <img src="./assets/images/Blog/img-news1.png" alt="" class="rounded-4 pt-1 d-block mx-auto w-100" />
               </div>
               <div class="blog-content p-2">
                 <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">new</a>
@@ -1427,7 +1676,7 @@
                 <div class="blog-img d-flex">
                   <img src="./assets/images/Blog/user1.png" alt="" class="" />
                   <div class="blog-info ps-3">
-                    <span class="fs-14 fw-bold">Sarah Harding</span>
+                    <span class="fs-14 fw-bold">Sarah Hero</span>
                     <p class="fs-12 text-secondary p-0 m-0">06 September</p>
                   </div>
                 </div>
@@ -1435,15 +1684,15 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-sm-6 col-lg-4">
             <div class="blog-card bg-light border rounded-4 p-1">
               <div class="blog-img rounded-4">
-                <img src="./assets/images/Blog/img-news2.png" alt="" class="rounded-4 d-block mx-auto pt-1" />
+                <img src="./assets/images/Blog/img-news2.png" alt="" class="rounded-4 d-block mx-auto pt-1 w-100" />
               </div>
               <div class="blog-content p-2">
                 <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">Events</a>
                 <h5 class="py-3">
-                  39 Strengths and Weaknesses To Discuss in a Job Interview
+                  39 Strengths To Discuss in Job Interview Questions
                 </h5>
                 <p class="text-secondary fs-14 fw-semibold">
                   Our mission is to create the world rsquo;s most sustainable
@@ -1463,10 +1712,10 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-sm-12 d-sm-none col-lg-4 d-lg-block">
             <div class="blog-card bg-light border rounded-4 p-1">
               <div class="blog-img rounded-4">
-                <img src="./assets/images/Blog/img-news3.png" alt="" class="rounded-4 pt-1 d-block mx-auto" />
+                <img src="./assets/images/Blog/img-news3.png" alt="" class="rounded-4 pt-1 d-block mx-auto w-100" />
               </div>
               <div class="blog-content p-2">
                 <a href="#" class="btn bg-body-secondary fs-13 py-1 px-3 text-primary">News</a>
@@ -1503,12 +1752,12 @@
     <!-- NewsLatter -->
     <section class="news-latter py-100">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="nl-bg rounded-4 p-5 background-image-cover d-flex">
-            <div class="col-3">
+            <div class="col-xl-3 d-none d-xl-block">
               <img src="./assets/images/News-latter/newsletter-left.png" alt="" />
             </div>
-            <div class="col-6 text-center">
+            <div class="col-xl-6 col-sm-12 col-lg-10 mx-md-auto  text-center">
               <h2 class="text-white fw-bold lh-base pb-2">
                 New Things Will Always <br />
                 Update Regularly
@@ -1520,7 +1769,7 @@
                     class="bi bi-check-circle pe-2"></i> Subscribe</a>
               </div>
             </div>
-            <div class="col-3 text-end">
+            <div class="col-xl-3 d-none d-xl-block text-end">
               <img src="./assets/images/News-latter/newsletter-right.png" alt="" />
             </div>
           </div>
@@ -1536,7 +1785,7 @@
     <section class="Footer">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-4 col-sm-6">
             <img src="./assets/images/Banner/logo-main.png" alt="" class="w-75 pb-2" />
             <p class="text-secondary fs-12 pt-3 fw-semibold pb-1">
               JobLinker is the heart of the design community and the best
@@ -1555,7 +1804,7 @@
               </a>
             </div>
           </div>
-          <div class="col pt-4">
+          <div class="col-lg pt-4 col-md-4 col-sm-6">
             <h6 class="fw-semibold">Resources</h6>
             <div class="fs-14">
               <li class="list-group-item pb-1">
@@ -1572,7 +1821,7 @@
               </li>
             </div>
           </div>
-          <div class="col pt-4">
+          <div class="col-lg pt-4 col-md-4 col-sm-6">
             <h6 class="fw-semibold">Community</h6>
             <div class="fs-14">
               <li class="list-group-item pb-1">
@@ -1589,7 +1838,7 @@
               </li>
             </div>
           </div>
-          <div class="col pt-4">
+          <div class="col-lg pt-4  col-md-4 col-sm-6">
             <h6 class="fw-semibold">Quick Links</h6>
             <div class="fs-14">
               <li class="list-group-item pb-1">
@@ -1606,7 +1855,7 @@
               </li>
             </div>
           </div>
-          <div class="col pt-4">
+          <div class="col-lg pt-4 col-md-4 col-sm-6">
             <h6 class="fw-semibold">More</h6>
             <div class="fs-14">
               <li class="list-group-item pb-1">
@@ -1623,7 +1872,7 @@
               </li>
             </div>
           </div>
-          <div class="col-3 pt-4">
+          <div class="col-lg-3 pt-4 col-md-4 col-sm-6">
             <h6>Download App</h6>
             <p class="text-secondary fs-12 pt-3 fw-semibold">
               Download our Apps and get extra 15% Discount on your first
@@ -1640,15 +1889,15 @@
           </div>
         </div>
         <div class="row">
-          <div class="footer-bottom py-4 border-top border-dark mt-4 d-flex">
-            <div class="col-6">
+          <div class="footer-bottom py-4 border-top border-dark mt-4 d-flex flex-wrap">
+            <div class="col-12 col-lg-6 pb-sm-2">
               <span class="fs-13 text-secondary">Copyright © 2022. JobBox all right reserved</span>
             </div>
-            <div class="col-6">
-              <div class="footer-social d-flex gap-3 fs-13 justify-content-end">
-                <a href="#" class="text-decoration-none text-secondary">Privacy Policy</a>
-                <a href="#" class="text-decoration-none text-secondary">Terms & Conditions</a>
-                <a href="#" class="text-decoration-none text-secondary">Security</a>
+            <div class="col-12 col-lg-6">
+              <div class="footer-social d-flex fs-13 justify-content-end d-sm-block d-lg-flex ">
+                <a href="#" class="text-decoration-none text-secondary pe-4">Privacy Policy</a>
+                <a href="#" class="text-decoration-none text-secondary pe-4">Terms & Conditions</a>
+                <a href="#" class="text-decoration-none text-secondary pe-4">Security</a>
               </div>
             </div>
           </div>
