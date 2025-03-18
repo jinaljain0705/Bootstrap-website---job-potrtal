@@ -74,7 +74,8 @@ img {
 }
 
 /* Banner */
-.slider,.find-job {
+.slider,
+.find-job {
   background-color: #e6e6fa;
 }
 .banner-1 ,.banner-3{
@@ -278,6 +279,11 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
+}
+.icon{
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
 }
 /* contact Page */
 .contact-banner {
