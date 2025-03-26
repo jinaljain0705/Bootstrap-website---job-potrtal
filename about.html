@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 z-3 w-100 ">
       <div class="container-fluid">
         
-        <a class="nav-logo w-25 ps-lg-5 pb-lg-2 pb-sm-0 ps-sm-0 " href="#">
+        <a class="nav-logo w-25 ps-lg-5 pb-lg-2 pb-sm-0 ps-sm-0 " href="./index.html">
           <img src="./assets/images/Banner/Logo-main.png" alt="" class="w-75" />
         </a>
 
@@ -107,19 +107,28 @@
   </header>
   <main>
      <!-- banner -->
-     <section class="banner py-0">
+     <section class="banner mb-5">
       <div class="banner-dark-bg bg-black position-relative">
         <div class="contact-banner opacity-25 py-5">
         </div>
         <div class="container">
           <div class="row">
-              <div class="col-sm-8 col-md-6  contact-card position-absolute d-flex">
+              <div class="col-sm-10 col-md-10  contact-card position-absolute d-flex justify-content-between">
                   <div class="contact-heading  ">
                     <h2 class="text-white z-1 fw-bold">About Us</h2>
-                    <p class="text-white fw-bold fs-5">Get the latest news, updates and tips</p>
+                    <p class="text-white fw-bold">Get the latest news, updates and tips</p>
                   </div> 
-              </div>
-              
+                  <div class="breadcrumbs d-none d-md-block">
+                    <ol class="breadcrumb bg-light py-3 px-4 rounded-3">
+                      <li class="breadcrumb-item">
+                        <a href="index.html" class="text-dark text-decoration-none">
+                          <i class="bi bi-house-door"></i> Home
+                        </a>
+                      </li>
+                      <li class="breadcrumb-item active text-dark" aria-current="page">About</li>
+                    </ol>
+                  </div>
+              </div>    
         </div>
         </div>
       </div>
@@ -127,7 +136,7 @@
      </section>
     
      <!-- Team section -->
-      <section class="team py-120 pb-5">
+      <section class="team py-100">
         <div class="container">
             <div class="team-heading text-center">
                 <span class="text-secondary fw-bold fs-5 ">OUR COMPANY</span>
@@ -256,7 +265,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-3 pt-1">
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-3 mb-lg-0">
                     <div class="team-card bg-white py-5 rounded-3">
                         <div class="team-img d-flex justify-content-center">
@@ -377,10 +386,13 @@
         </div>
       </section>
       <!-- Mission -->
-        <section class="mission py-100">
-        <div class="container text-center mt-5">
-            <h2 class="">Our Mission & Values</h2>
-            <span class="text-secondary fw-bold"> These Rules are Our main rule</span>
+        <section class="mission py-100 pt-5">
+        <div class="container text-center ">
+          <span class="text-secondary fw-bold fs-5">OUR RULES</span>
+            <h2 class="fw-semibold">Our Mission & Values</h2>
+            <span class="text-secondary fw-semibold mx-auto ">
+              Driving Excellence, Inspiring Integrity, and Shaping a Better Future
+            </span>
             <div class="row g-4 mt-4">
                 <div class="col-md-4">
                     <div class="card p-4 border-0 shadow-sm py-5">
@@ -413,17 +425,18 @@
         </div>
         </section>
       <!-- feedback -->
-       <section class="feedback  py-120 bg-white">
+       <section class="feedback  py-100 bg-white pt-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="team-heading text-center">
+                  <span class="text-secondary fw-bold fs-5 pb-1">Trusted by Many</span>
                     <h2 class="fw-semibold">Our Happy Customer</h2>
                     <p class="text-secondary fw-bold fs-6 mb-5">
                         When it comes to choosing the right web hosting provider, we know how easy it <br>
                         is to get overwhelmed with the number.
                     </p>
                 </div>
-                <div class="col-8 col-lg-4 mb-3">
+                <div class="col-8 col-lg-4 mb-2">
                     <div class="feedback-card p-4 position-relative rounded-4">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Blanditiis, ut! Aperiam autem delectus nulla non neque quaerat 
@@ -439,7 +452,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4 mb-3">
+                <div class="col-8 col-lg-4 mb-2">
                     <div class="feedback-card p-4 position-relative rounded-4">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Blanditiis, ut! Aperiam autem delectus nulla non neque quaerat 
@@ -455,7 +468,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4 mb-3">
+                <div class="col-8 col-lg-4 mb-2">
                     <div class="feedback-card p-4 position-relative rounded-4">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Blanditiis, ut! Aperiam autem delectus nulla non neque quaerat 
@@ -476,8 +489,12 @@
        </section>
       <!-- Map -->
        <section class="map pt-5">
-        <h1 class="text-center pt-4 fw-semibold">Our Location</h1>
-        <p class="text-secondary fw-semibold text-center py-0 mb-5">Explore Our company come and visit</p>
+        <div class="map-heading text-center">
+          <span class="text-secondary fw-bold fs-5">Find Us Here</span>
+          <h1 class="text-center  fw-semibold">Our Location</h1>
+          <p class="text-secondary fw-semibold text-center py-0 mb-5">Easily Accessible Location to Serve You Better</p>
+
+        </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.
             18800900134!2d72.65747318239129!3d21.159120355102836!2m3!1f0!2f0!3f0!3m2!
             1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2s
